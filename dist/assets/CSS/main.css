@@ -77,10 +77,15 @@ nav {
   justify-content: center;
   align-items: center;
 }
+nav .cont-nav {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 nav .nav-links {
-  width: 60%;
-  max-width: 500px;
-  min-width: 300px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +94,8 @@ nav .nav-links button {
   background: none;
   border: none;
   color: #1d4529;
-  font-size: 1.7em;
+  font-size: 1.3em;
+  font-weight: 500;
   font-family: verdana;
 }
 nav .nav-links button:hover {
@@ -97,13 +103,11 @@ nav .nav-links button:hover {
 }
 
 .barContainer {
-  width: 61%;
+  width: 100.5%;
   display: flex;
-  max-width: 500px;
-  min-width: 300px;
 }
 .barContainer .bottomBar {
-  width: 90px;
+  width: 120px;
   height: 2px;
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
