@@ -1,0 +1,21 @@
+@use '../abstracts' as *;
+
+.about-us {
+    @include flex-between(row);
+
+    &__left {
+        width: 45%;
+        height: 100%;
+        background: $t2;
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-gap: 10px;
+       grid-template-rows: repeat(2, 50%);
+    }
+
+    &__right {
+        width: 55%;
+        height: 100%;
+        background: $t3;
+    }
+}
