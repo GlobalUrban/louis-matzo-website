@@ -1,4 +1,7 @@
+@use '../abstracts' as *;
+
 h1 {
+    font-size: $XXL;
 
 }
 
@@ -15,7 +18,11 @@ h4 {
 }
 
 p {
+    font-size: $M;
 
+    @include breakpoint(laptop-L){
+        font-size: $S;
+    }
 }
 
 button {
