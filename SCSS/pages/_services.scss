@@ -4,16 +4,13 @@
   @include flex(column, flex-start);
   align-items: flex-start;
   max-width: 1250px;
-  
-
   gap: 5%;
 
   // ALL SERVICES // =====================
   .services__container {
     width: 100%;
-    
     align-self: center;
-    gap: 2%;
+    gap: 1%;
     flex-wrap: wrap;
 
     @include flex-center;
