@@ -11,6 +11,9 @@ h2 {
 
 h3 {
 font-size: $S;
+margin: 0;
+padding: 0;
+line-height: 0;
 }
 
 h4 {
@@ -19,7 +22,7 @@ h4 {
 
 p {
     font-size: $M;
-
+    line-height: 1;
     @include breakpoint(laptop-L){
         font-size: $S;
     }
