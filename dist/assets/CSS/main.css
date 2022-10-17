@@ -54,6 +54,10 @@ h1 {
   font-size: 4rem;
 }
 
+h3 {
+  font-size: 1.3rem;
+}
+
 p {
   font-size: 1.5rem;
 }
@@ -168,6 +172,30 @@ p {
   text-align: justify;
 }
 
+.gradiant {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+
+.services {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+}
+.services .services__container {
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 0, 0, 0.534);
+}
+.services .services__container .services__container-service {
+  padding: 12px;
+}
+.services .services__container .services__container-service .services-img {
+  width: 70px;
+  height: 70px;
+}
 nav {
   width: 100%;
   height: 100px;
