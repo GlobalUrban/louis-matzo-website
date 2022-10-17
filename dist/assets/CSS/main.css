@@ -171,6 +171,14 @@ p {
   height: 90%;
   padding-left: 3%;
 }
+.about-us .about-us__container .about-us__right ::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #1d4529;
+}
+.about-us .about-us__container .about-us__right ::selection {
+  color: white;
+  background: #1d4529;
+}
 .about-us .about-us__container .about-us__right p {
   width: 85%;
   text-align: justify;
@@ -212,6 +220,14 @@ p {
   overflow-y: hidden;
   background: rgb(240, 240, 240);
   transition: 0.4s ease-in-out;
+}
+.services .services__container .services__container-service ::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #1d4529;
+}
+.services .services__container .services__container-service ::selection {
+  color: white;
+  background: #1d4529;
 }
 .services .services__container .services__container-service:hover {
   transform: scale(1.03);
@@ -260,6 +276,14 @@ p {
 }
 .services .services__container .service-green {
   background: #1d4529;
+}
+.services .services__container .service-green ::-moz-selection { /* Code for Firefox */
+  color: #1d4529;
+  background: white;
+}
+.services .services__container .service-green ::selection {
+  color: #1d4529;
+  background: white;
 }
 .services .services__container .service-green .service-info {
   color: rgba(255, 255, 255, 0.897);

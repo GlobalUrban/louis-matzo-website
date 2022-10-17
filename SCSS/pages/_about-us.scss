@@ -73,6 +73,16 @@
         height: 90%;
         padding-left: 3%;
 
+        ::-moz-selection { /* Code for Firefox */
+          color: white;
+          background: $green;
+        }
+        
+        ::selection {
+          color: white;
+          background: $green;
+        }
+
 
         p{
             width: 85%;
