@@ -8,10 +8,13 @@ nav{
     justify-content: center;
     align-items: center;
 
+    .cont-nav {
+      width: 650px;
+      @include flex(column, center);
+    }
+
     .nav-links {
-        width: 60%;
-        max-width: 500px;
-        min-width: 300px;
+      width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -20,7 +23,8 @@ nav{
             background: none;
             border: none;
             color: $green;
-            font-size: 1.7em;
+            font-size: 1.3em;
+            font-weight: 500;
             
             font-family: verdana;
 
@@ -32,13 +36,11 @@ nav{
   }
   
   .barContainer {
-    width: 61%;
+    width: 100.5%;
     display: flex;
-    max-width: 500px;
-    min-width: 300px;
-
+    
     .bottomBar {
-        width: 90px;
+        width: 120px;
         height: 2px;
         background: rgb(154, 105, 23);
         background: linear-gradient(
