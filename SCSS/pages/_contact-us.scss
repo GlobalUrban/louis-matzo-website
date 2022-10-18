@@ -4,6 +4,7 @@
   width: 100%;
   height: 100%;
   @include flex(column, center);
+  position: relative;
 
   .contact-us__top {
     width: 85%;
@@ -59,14 +60,47 @@
   .contact-us__cont-map {
     width: 100%;
     height: 40%;
-    background: $t2;
     @include flex-center;
+    position: relative;
+    transition:  0.4s ease-in-out;
     
 
     iframe {
         width: 100%;
         height: 100%;
     }
+
+    button {
+        right: 10px;
+        top: 10px;
+        position: absolute;
+        padding: 10px 15px;
+        border-radius: 9px;
+        background: $green;
+        color: white;
+        -webkit-box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+        -moz-box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+        box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+        border: none;
+        outline: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+        }
+  }
+
+  .map-bigger {
+    height: 90%;
+    position: absolute;
+    width: 98%;
+    border-radius: 12px;
+    overflow: hidden;
+    -webkit-box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+    -moz-box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+    box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+   
+    
   }
 
 
