@@ -3,6 +3,11 @@
 .about-us {
   @include flex-center();
 
+  @include breakpoint(laptop-L){
+    max-width: 1200px;
+  }
+  
+
   .about-us__container {
     @include flex-between(row);
     gap: 2%;

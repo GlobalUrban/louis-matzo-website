@@ -3,8 +3,12 @@
 .services {
   @include flex(column, flex-start);
   align-items: flex-start;
-  max-width: 1250px;
+  max-width: 1300px;
   gap: 5%;
+
+  @include breakpoint(laptop-L){
+    max-width: 1190px;
+  }
 
   // ALL SERVICES // =====================
   .services__container {
