@@ -10,15 +10,20 @@ buttons[0].addEventListener("click", () => {
 
 buttons[1].addEventListener("click", () => {
   first.style = "margin-left: -20%;";
-  navBottomBar.style = "margin-left: 25%;";
+  navBottomBar.style = "margin-left: 21%;";
 });
 
 buttons[2].addEventListener("click", () => {
   first.style = "margin-left: -40%;";
-  navBottomBar.style = "margin-left: 50%;";
+  navBottomBar.style = "margin-left: 41.5%;";
 });
 
 buttons[3].addEventListener("click", () => {
   first.style = "margin-left: -60%;";
-  navBottomBar.style = "margin-left: 75%;";
+  navBottomBar.style = "margin-left: 63%;";
+});
+
+buttons[4].addEventListener("click", () => {
+  first.style = "margin-left: -80%;";
+  navBottomBar.style = "margin-left: 84%;";
 });

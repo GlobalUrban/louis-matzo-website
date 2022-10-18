@@ -1,0 +1,41 @@
+@use '../abstracts' as *;
+
+.slider {
+  width: 100%;
+  max-width: 1920px;
+  height: 90vh;
+  min-height: 600px;
+  max-height: 900px;
+  border-radius: 10px;
+  overflow-x: hidden;
+  
+
+  .slides {
+    width: 500%;
+    height: 100%;
+    display: flex;
+
+    .slide {
+      width: 20%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: white;
+      transition: 0.5s ease-in-out;
+      img {
+        width: 100%;
+        height: 500px;
+      }
+
+      .slide-container {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .slide-grey {
+      background: $grey;
+    }
+  }
+}
