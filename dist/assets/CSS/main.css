@@ -315,35 +315,59 @@ p {
 .contact-us .contact-us__top {
   width: 85%;
   height: 60%;
-  background: rgba(94, 190, 94, 0.678);
 }
 .contact-us .contact-us__top .contact-us__top-left {
-  width: 40%;
+  width: 50%;
   height: 100%;
-  background: rgba(128, 128, 128, 0.637);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   align-items: flex-start;
 }
-.contact-us .contact-us__top .contact-us__top-left .contact-us_infoLink {
-  width: 50px;
-  height: 50px;
+.contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  gap: 0.5em;
+}
+.contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink .contact-us__infoLink-icon {
+  width: 1.7em;
+  height: 1.7em;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: red;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  padding: 2px;
 }
-.contact-us .contact-us__top .contact-us__top-left .contact-us_infoLink .infoLink-icon__container {
+.contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink .infoLink-icon__container {
   background: white;
-  width: 90%;
-  height: 90%;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink .infoLink-icon__container svg {
+  fill: #1d4529;
+  width: 1.2em;
+  height: 1.2em;
 }
 .contact-us .contact-us__cont-map {
   width: 100%;
   height: 40%;
   background: rgba(255, 0, 0, 0.534);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-us .contact-us__cont-map iframe {
+  width: 100%;
+  height: 100%;
 }
 
 nav {
