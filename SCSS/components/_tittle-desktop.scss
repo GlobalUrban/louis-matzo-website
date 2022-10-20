@@ -9,6 +9,18 @@
     span {
         font-size: $L;
     }
+
+    @media screen and(max-width: 1400px) {
+        font-size: 20px;
+    }
+
+    @include breakpoint(laptop-L){
+        font-size: $XL;
+
+        span {
+            font-size: $M;
+        }
+    }
     
 
     .tittle-line {
@@ -24,4 +36,7 @@
           rgba(195, 149, 59, 1) 100%
         );
     }
+
+
+  
 }

@@ -77,25 +77,6 @@ p {
   }
 }
 
-.main__container {
-  height: 500px;
-  width: 100%;
-  background-color: rgba(158, 65, 158, 0.603);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1200px) {
-  .main__container {
-    height: 200px;
-  }
-}
-.main__container .main__inside {
-  width: 50%;
-  height: 50%;
-  background: rgba(94, 190, 94, 0.678);
-}
-
 .about-us {
   display: flex;
   justify-content: center;
@@ -385,6 +366,11 @@ p {
   align-items: center;
   align-items: flex-start;
 }
+@media screen and (max-width: 1400px) {
+  .contact-us .contact-us__top .contact-us__top-left h4 {
+    margin: 5px;
+  }
+}
 .contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink {
   display: flex;
   flex-direction: row;
@@ -393,6 +379,11 @@ p {
   font-size: 1.3rem;
   margin-top: 0.5em;
   gap: 0.5em;
+}
+@media screen and (max-width: 1400px) {
+  .contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink {
+    font-size: 1.1rem;
+  }
 }
 .contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink .contact-us__infoLink-icon {
   width: 1.7em;
@@ -507,8 +498,8 @@ nav .nav-links button:hover {
   max-width: 1920px;
   height: 90vh;
   max-height: 900px;
-  border-radius: 10px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 @media screen and (max-height: 700px) {
   .slider {
@@ -528,10 +519,6 @@ nav .nav-links button:hover {
   align-items: center;
   background: white;
   transition: 0.5s ease-in-out;
-}
-.slider .slides .slide img {
-  width: 100%;
-  height: 500px;
 }
 .slider .slides .slide .slide-container {
   width: 100%;
@@ -924,6 +911,19 @@ template {
 }
 .tittle-desktop span {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 1400px) {
+  .tittle-desktop {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .tittle-desktop {
+    font-size: 3rem;
+  }
+  .tittle-desktop span {
+    font-size: 1.5rem;
+  }
 }
 .tittle-desktop .tittle-line {
   height: 2px;
