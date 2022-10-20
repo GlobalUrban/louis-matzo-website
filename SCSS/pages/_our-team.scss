@@ -11,7 +11,7 @@
     margin-left: 2%;
   }
 
-//   General Container //
+  //   General Container //
   .our-team__container {
     width: 100%;
     height: 90%;
@@ -20,50 +20,72 @@
 
     // Top Container //
     .our-team__container-top {
-        height: 55%;
+      height: 55%;
+      width: 100%;
+      display: flex;
+
+      .our-team__container-principal {
+        width: 50%;
         width: 100%;
+        background: $grey;
         display: flex;
 
-        .our-team__container-principal {
-            width: 50%;
+        .our-team__principal-img {
+          width: 50%;
+          height: 100%;
+          background: rgb(255, 245, 225);
+          background: radial-gradient(
+            circle,
+            rgba(255, 245, 225, 1) 5%,
+            rgba(245, 194, 96, 1) 70%,
+            rgba(212, 158, 68, 1) 100%
+          );
+          @include flex-center;
+
+          img {
             width: 100%;
-            background: $grey;
-            display: flex;
-      
-            .our-team__principal-img {
-              width: 50%;
-              height: 100%;
-              background: rgb(255, 245, 225);
-              background: radial-gradient(
-                circle,
-                rgba(255, 245, 225, 1) 5%,
-                rgba(245, 194, 96, 1) 70%,
-                rgba(212, 158, 68, 1) 100%
-              );
-              @include flex-center;
-      
-              img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-              }
-            }
-      
-            .out-team__principal-info {
-             width: 50%;
-             padding: 3vw;
-      
-            }
+            height: 100%;
+            object-fit: contain;
           }
+        }
+
+        .out-team__principal-info {
+          width: 50%;
+          padding: 3vw;
+        }
+      }
     }
 
     // Bottom Container //
     .our-team__container-bottom {
-        height: 45%;
-        width: 100%;
-        background: $t3;
-    }
+      height: 45%;
+      width: 100%;
+      background: $t3;
 
- 
+      .our-team__scroll {
+        width: 200%;
+        background: $t3;
+        height: 100%;
+        white-space: nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        display: flex;
+        transition: all 0.4s ease-in-out;
+  
+        .our-team__slide {
+          width: 100px;
+          height: 200px;
+          background: $t2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+
+
+
+    }
   }
 }

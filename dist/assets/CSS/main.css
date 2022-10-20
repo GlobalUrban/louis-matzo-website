@@ -343,6 +343,25 @@ p {
   width: 100%;
   background: rgba(94, 190, 94, 0.678);
 }
+.our-team .our-team__container .our-team__container-bottom .our-team__scroll {
+  width: 200%;
+  background: rgba(94, 190, 94, 0.678);
+  height: 100%;
+  white-space: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  display: flex;
+  transition: all 0.4s ease-in-out;
+}
+.our-team .our-team__container .our-team__container-bottom .our-team__scroll .our-team__slide {
+  width: 100px;
+  height: 200px;
+  background: rgba(255, 0, 0, 0.534);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .contact-us {
   width: 100%;
