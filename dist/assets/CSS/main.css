@@ -511,6 +511,11 @@ nav .nav-links button:hover {
   border-radius: 10px;
   overflow-x: hidden;
 }
+@media screen and (max-height: 700px) {
+  .slider {
+    height: 60vh;
+  }
+}
 .slider .slides {
   width: 500%;
   height: 100%;
@@ -551,6 +556,11 @@ header {
     height: 40vh;
   }
 }
+@media screen and (max-height: 700px) {
+  header {
+    height: 87vh;
+  }
+}
 header .header__top {
   width: 100%;
   display: flex;
@@ -588,7 +598,7 @@ header .header__center img {
   -o-object-fit: contain;
      object-fit: contain;
 }
-@media screen and (max-height: 680px) {
+@media screen and (max-height: 700px) {
   header .header__center img {
     height: 400px;
   }

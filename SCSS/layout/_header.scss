@@ -10,6 +10,10 @@ header {
     height: 40vh;
   }
 
+  @include breakpoint-h(Tablet-S) {
+    height: 87vh;
+  }
+
  
 
   .header__top {
@@ -49,7 +53,7 @@ header {
       width: 100%;
       object-fit: contain;
 
-      @media screen and(max-height: 680px) {
+      @include breakpoint-h(Tablet-S){
         height: 400px;
       }
     }

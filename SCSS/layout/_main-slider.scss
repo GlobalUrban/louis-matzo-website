@@ -8,6 +8,10 @@
   max-height: 900px;
   border-radius: 10px;
   overflow-x: hidden;
+
+  @include breakpoint-h(Tablet-S) {
+    height: 60vh;
+  }
   
 
   .slides {
