@@ -14,6 +14,12 @@
     .contact-us__top-left {
       width: 50%;
       height: 100%;
+
+      h4 {
+        @include breakpoint(laptop-L){
+          margin: 5px;
+        }
+      }
      
       
       @include flex(column, center);
@@ -24,6 +30,10 @@
         font-size: $S;
         margin-top: 0.5em;
         gap: 0.5em;
+
+        @include breakpoint(laptop-L){
+          font-size: $XS;                                                                                                       ;
+        }
         .contact-us__infoLink-icon {
           width: 1.7em;
           height: 1.7em;
