@@ -4,13 +4,13 @@
   width: 100%;
   max-width: 1920px;
   height: 90vh;
-  min-height: 600px;
+  
   max-height: 900px;
   border-radius: 10px;
   overflow-x: hidden;
-
+  
   @include breakpoint-h(Tablet-S) {
-    height: 60vh;
+    height: 87vh;
   }
   
 
