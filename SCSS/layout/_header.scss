@@ -10,6 +10,8 @@ header {
     height: 40vh;
   }
 
+ 
+
   .header__top {
     width: 100%;
     @include flex-between(row);
@@ -41,9 +43,15 @@ header {
     justify-self: center;
     align-self: center;
 
+   
+
     img {
       width: 100%;
       object-fit: contain;
+
+      @media screen and(max-height: 580px) {
+        height: 400px;
+      }
     }
   }
 }
