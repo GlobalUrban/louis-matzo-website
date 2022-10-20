@@ -28,6 +28,10 @@ nav{
             
             font-family: verdana;
 
+            a {
+              color: $green;
+            }
+
             &:hover {
                 cursor: pointer;  
             }
