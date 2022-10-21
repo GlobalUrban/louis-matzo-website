@@ -1,6 +1,6 @@
 const slider = document.getElementById("slider");
 const slides = 4;
-const slideDuration = 1000;
+const slideDuration = 2000;
 
 let slideCalculation = slides * 100;
 
@@ -15,3 +15,5 @@ function Slider() {
     a = a == slideCalculation ? 0 : a;
   }, slideDuration);
 }
+
+

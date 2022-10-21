@@ -15,7 +15,6 @@
   .our-team__container {
     width: 100%;
     height: 90%;
-    background: $t2;
     @include flex(column, flex-start);
 
     // Top Container //
@@ -60,21 +59,22 @@
     .our-team__container-bottom {
       height: 45%;
       width: 100%;
-      background: $t3;
+      overflow-x: hidden;
 
       .our-team__scroll {
-        width: 200%;
+        width: 400%;
+        z-index: 10;
         background: $t3;
         height: 100%;
         white-space: nowrap;
-        justify-content: center;
-        align-items: center;
+        position: relative;
+        @include flex-center;
         gap: 5px;
-        display: flex;
+
         transition: all 0.4s ease-in-out;
-  
+
         .our-team__slide {
-          width: 100px;
+          width: 100%;
           height: 200px;
           background: $t2;
           display: flex;
@@ -82,10 +82,6 @@
           align-items: center;
         }
       }
-
-
-
-
     }
   }
 }

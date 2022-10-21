@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use "../abstracts" as *;
 
 .slider {
   width: 100%;
@@ -7,11 +7,10 @@
   max-height: 900px;
   overflow-x: hidden;
   overflow-y: hidden;
-  
+
   @include breakpoint-h(Tablet-S) {
     height: 87vh;
   }
-  
 
   .slides {
     width: 500%;
@@ -26,6 +25,7 @@
       align-items: center;
       background: white;
       transition: 0.5s ease-in-out;
+
       .slide-container {
         width: 100%;
         height: 100%;
