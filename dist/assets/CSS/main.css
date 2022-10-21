@@ -8,6 +8,7 @@
  */
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 /**
@@ -74,25 +75,6 @@ p {
   p {
     font-size: 1.3rem;
   }
-}
-
-.main__container {
-  height: 500px;
-  width: 100%;
-  background-color: rgba(158, 65, 158, 0.603);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@media screen and (max-width: 1200px) {
-  .main__container {
-    height: 200px;
-  }
-}
-.main__container .main__inside {
-  width: 50%;
-  height: 50%;
-  background: rgba(94, 190, 94, 0.678);
 }
 
 .about-us {
@@ -304,6 +286,64 @@ p {
   color: rgba(255, 255, 255, 0.897);
 }
 
+.our-team {
+  width: 0%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  gap: 3%;
+}
+.our-team .our-team__title {
+  margin-left: 2%;
+}
+.our-team .our-team__container {
+  width: 100%;
+  height: 90%;
+  background: rgba(255, 0, 0, 0.534);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.our-team .our-team__container .our-team__container-top {
+  height: 55%;
+  width: 100%;
+  display: flex;
+}
+.our-team .our-team__container .our-team__container-top .our-team__container-principal {
+  width: 50%;
+  width: 100%;
+  background: rgb(247, 247, 247);
+  display: flex;
+}
+.our-team .our-team__container .our-team__container-top .our-team__container-principal .our-team__principal-img {
+  width: 50%;
+  height: 100%;
+  background: rgb(255, 245, 225);
+  background: radial-gradient(circle, rgb(255, 245, 225) 5%, rgb(245, 194, 96) 70%, rgb(212, 158, 68) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-team .our-team__container .our-team__container-top .our-team__container-principal .our-team__principal-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.our-team .our-team__container .our-team__container-top .our-team__container-principal .out-team__principal-info {
+  width: 50%;
+  padding: 3vw;
+}
+.our-team .our-team__container .our-team__container-bottom {
+  height: 45%;
+  width: 100%;
+  background: rgba(94, 190, 94, 0.678);
+}
+
 .contact-us {
   width: 100%;
   height: 100%;
@@ -326,6 +366,11 @@ p {
   align-items: center;
   align-items: flex-start;
 }
+@media screen and (max-width: 1400px) {
+  .contact-us .contact-us__top .contact-us__top-left h4 {
+    margin: 5px;
+  }
+}
 .contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink {
   display: flex;
   flex-direction: row;
@@ -334,6 +379,11 @@ p {
   font-size: 1.3rem;
   margin-top: 0.5em;
   gap: 0.5em;
+}
+@media screen and (max-width: 1400px) {
+  .contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink {
+    font-size: 1.1rem;
+  }
 }
 .contact-us .contact-us__top .contact-us__top-left .contact-us__infoLink .contact-us__infoLink-icon {
   width: 1.7em;
@@ -424,6 +474,9 @@ nav .nav-links button {
   font-weight: 500;
   font-family: verdana;
 }
+nav .nav-links button a {
+  color: #1d4529;
+}
 nav .nav-links button:hover {
   cursor: pointer;
 }
@@ -444,10 +497,14 @@ nav .nav-links button:hover {
   width: 100%;
   max-width: 1920px;
   height: 90vh;
-  min-height: 600px;
   max-height: 900px;
-  border-radius: 10px;
   overflow-x: hidden;
+  overflow-y: hidden;
+}
+@media screen and (max-height: 700px) {
+  .slider {
+    height: 87vh;
+  }
 }
 .slider .slides {
   width: 500%;
@@ -462,10 +519,6 @@ nav .nav-links button:hover {
   align-items: center;
   background: white;
   transition: 0.5s ease-in-out;
-}
-.slider .slides .slide img {
-  width: 100%;
-  height: 500px;
 }
 .slider .slides .slide .slide-container {
   width: 100%;
@@ -487,6 +540,11 @@ header {
 @media screen and (max-width: 1024px) {
   header {
     height: 40vh;
+  }
+}
+@media screen and (max-height: 700px) {
+  header {
+    height: 87vh;
   }
 }
 header .header__top {
@@ -525,6 +583,11 @@ header .header__center img {
   width: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media screen and (max-height: 700px) {
+  header .header__center img {
+    height: 400px;
+  }
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -848,6 +911,19 @@ template {
 }
 .tittle-desktop span {
   font-size: 2.5rem;
+}
+@media screen and (max-width: 1400px) {
+  .tittle-desktop {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .tittle-desktop {
+    font-size: 3rem;
+  }
+  .tittle-desktop span {
+    font-size: 1.5rem;
+  }
 }
 .tittle-desktop .tittle-line {
   height: 2px;

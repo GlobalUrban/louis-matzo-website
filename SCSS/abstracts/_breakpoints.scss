@@ -3,12 +3,19 @@ $breakpoints-down: (
   "Laptop-M": 1200px,
   "Tablet-L": 1024px,
   "Tablet-M": 768px,
+  "Tablet-S": 700px,
   "Phone-L": 480px,
   "Phone-M": 400px,
 );
 
 @mixin breakpoint($size) {
   @media screen and(max-width: map-get($breakpoints-down, $size)) {
+    @content;
+  }
+}
+
+@mixin breakpoint-h($size) {
+  @media screen and(max-height: map-get($breakpoints-down, $size)) {
     @content;
   }
 }
