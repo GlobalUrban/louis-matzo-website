@@ -23,6 +23,24 @@ html {
   box-sizing: inherit;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
 /**
  * Hide text while making it readable for screen readers
  * 1. Needed in WebKit-based browsers because of an implementation bug;
@@ -301,47 +319,108 @@ p {
 }
 .our-team .our-team__container {
   width: 100%;
-  height: 90%;
-  background: rgba(255, 0, 0, 0.534);
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+.our-team .our-team__container .our-team__container-member {
+  width: 50%;
+  height: 100%;
+  background: #1d4529;
+  display: flex;
+}
+.our-team .our-team__container .our-team__container-member .our-team__member-img {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  height: 100%;
+  background: rgb(240, 240, 240);
+  background: radial-gradient(circle, rgb(240, 240, 240) 5%, rgb(161, 161, 161) 70%, rgb(89, 89, 89) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our-team .our-team__container .our-team__container-member .our-team__member-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.our-team .our-team__container .our-team__container-member .out-team__member-info {
+  width: 50%;
+  padding: 3vw;
+}
+.our-team .our-team__container .our-team__container-member .out-team__member-info h3 {
+  color: white;
+  font-size: 1.5rem;
+}
+.our-team .our-team__container .our-team__container-member .out-team__member-info span {
+  color: rgba(255, 255, 255, 0.897);
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 1400px) {
+  .our-team .our-team__container .our-team__container-member .out-team__member-info span {
+    font-size: 1.1rem;
+  }
+}
+.our-team .our-team__container .our-team__container-member .out-team__member-info p {
+  color: rgba(255, 255, 255, 0.897);
 }
 .our-team .our-team__container .our-team__container-top {
   height: 55%;
   width: 100%;
   display: flex;
 }
-.our-team .our-team__container .our-team__container-top .our-team__container-principal {
-  width: 50%;
-  width: 100%;
+.our-team .our-team__container .our-team__container-top .teamDirector {
   background: rgb(247, 247, 247);
   display: flex;
 }
-.our-team .our-team__container .our-team__container-top .our-team__container-principal .our-team__principal-img {
-  width: 50%;
-  height: 100%;
+.our-team .our-team__container .our-team__container-top .teamDirector .teamDirector-img {
   background: rgb(255, 245, 225);
   background: radial-gradient(circle, rgb(255, 245, 225) 5%, rgb(245, 194, 96) 70%, rgb(212, 158, 68) 100%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-.our-team .our-team__container .our-team__container-top .our-team__container-principal .our-team__principal-img img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-}
-.our-team .our-team__container .our-team__container-top .our-team__container-principal .out-team__principal-info {
+.our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info {
   width: 50%;
   padding: 3vw;
+}
+.our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info h3 {
+  color: #1d4529;
+  font-size: 1.5rem;
+}
+.our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info span {
+  color: #c3953b;
+  font-size: 1.3rem;
+}
+.our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info p {
+  color: rgba(0, 0, 0, 0.705);
 }
 .our-team .our-team__container .our-team__container-bottom {
   height: 45%;
   width: 100%;
+  overflow-x: hidden;
+}
+.our-team .our-team__container .our-team__container-bottom .our-team__scroll {
+  width: 400%;
+  z-index: 10;
   background: rgba(94, 190, 94, 0.678);
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 2.5s ease-out;
+}
+.our-team .our-team__container .our-team__container-bottom .our-team__scroll .our-team__slide {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 0, 0, 0.534);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-us {
