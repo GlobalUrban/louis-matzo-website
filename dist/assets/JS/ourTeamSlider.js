@@ -1,4 +1,4 @@
-const slider = document.getElementById("slider");
+const slider = document.getElementById("ourTeamSlider");
 const slides = 3.5;
 const slideDuration = 7000;
 
