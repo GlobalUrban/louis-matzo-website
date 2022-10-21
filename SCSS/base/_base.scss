@@ -25,3 +25,33 @@ html {
   box-sizing: inherit;
 }
 
+/* width */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  // box-shadow: inset 0 0 5px grey; 
+  // border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(
+    90deg,
+    rgba(154, 105, 23, 1) 0%,
+    rgba(242, 219, 126, 1) 34%,
+    rgba(195, 149, 59, 1) 74%,
+    rgba(242, 219, 126, 1) 100%,
+    rgba(195, 149, 59, 1) 100%
+  );
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+
