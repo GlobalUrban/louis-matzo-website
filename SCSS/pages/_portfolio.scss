@@ -1,0 +1,68 @@
+@use '../abstracts/' as *;
+
+.portfolio {
+    @include flex(column, center);
+    align-items: flex-start;
+    gap: 2%;
+
+    .tittle-desktop {
+        margin-left: 5%;
+    }
+
+
+
+    .portfloio__bottom {
+        width: 100%;
+        height: 90%;
+        @include flex-center;
+
+        button {
+            outline: none;
+            border: none;
+            background: none;
+            
+          
+          svg{
+            width: 30px;
+            height: 50px;
+            fill: rgba(0, 0, 0, 0.507);
+            transition: all 0.2s ;
+    
+            &:hover {
+                transform: scale(1.3);
+                cursor: pointer;
+            }
+          }
+        }
+    
+        .portfolio__slider-container {
+            width: 90%;
+            height: 90%;
+            background: rgb(187, 57, 57);
+            overflow-x: hidden;
+        
+            .portfolio__slider {
+              width: 200%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              
+              transition: all 0.4s ease-in-out;
+        
+              .portfolio__slider-slide {
+                width: 100%;
+                height: 100%;
+                
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+            }
+          }
+    }
+
+   
+
+}
