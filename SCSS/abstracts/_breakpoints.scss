@@ -1,8 +1,12 @@
+@use '../abstracts/mixins' as *;
+
+
 $breakpoints-down: (
   "laptop-L": 1400px,
   "Laptop-M": 1200px,
+  "Laptop-S": 1100px,
   "Tablet-L": 1024px,
-  "Tablet-M": 768px,
+  "Tablet-M": 890px,
   "Tablet-S": 700px,
   "Phone-L": 480px,
   "Phone-M": 400px,
@@ -17,5 +21,19 @@ $breakpoints-down: (
 @mixin breakpoint-h($size) {
   @media screen and(max-height: map-get($breakpoints-down, $size)) {
     @content;
+  }
+}
+
+
+.Desktop-View {
+  @include breakpoint(Laptop-S){
+    display: none;
+  }
+}
+
+.Mobile-View {
+  display: none ;
+  @include breakpoint(Laptop-S){
+    display: block;
   }
 }

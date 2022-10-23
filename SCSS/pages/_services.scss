@@ -10,12 +10,25 @@
     max-width: 1190px;
   }
 
+  @include breakpoint(Laptop-S){
+    background: $green;
+    @include flex(column, center);
+    align-items: center;
+    padding-bottom: 5%;
+  }
+
   // ALL SERVICES // =====================
   .services__container {
+    margin-top: 2%;
     width: 100%;
+    
     align-self: center;
     gap: 1%;
     flex-wrap: wrap;
+
+    @include breakpoint(Laptop-S){
+      gap: 2%
+    }
 
     @include flex-center;
 
@@ -103,6 +116,10 @@
 
     .service-green {
         background: $green;
+
+        @include breakpoint(Laptop-S){
+          background: $green-2;
+        }
 
         ::-moz-selection { /* Code for Firefox */
             color: $green;

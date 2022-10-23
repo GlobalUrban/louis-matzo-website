@@ -1,0 +1,23 @@
+@media screen and (max-width: 1100px) {
+  .Desktop-View {
+    display: none;
+  }
+}
+
+.Mobile-View {
+  display: none;
+}
+@media screen and (max-width: 1100px) {
+  .Mobile-View {
+    display: block;
+  }
+}
+
+.gradiant {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+
+.m-main__containe {
+  background: #1d4529;
+}/*# sourceMappingURL=m-main__container.css.map */
