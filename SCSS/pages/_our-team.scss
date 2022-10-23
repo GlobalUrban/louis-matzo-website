@@ -11,59 +11,133 @@
     margin-left: 2%;
   }
 
-//   General Container //
+  //   Our Team General Container //
   .our-team__container {
     width: 100%;
-    height: 90%;
-    background: $t2;
+    height: 85%;
     @include flex(column, flex-start);
+
+    //Team Meamber Layout
+    .our-team__container-member {
+      width: 50%;
+      height: 100%;
+      background: $green;
+      display: flex;
+
+      .our-team__member-img {
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 50%;
+        height: 100%;
+        background: rgb(240, 240, 240);
+        background: radial-gradient(
+          circle,
+          rgba(240, 240, 240, 1) 5%,
+          rgba(161, 161, 161, 1) 70%,
+          rgba(89, 89, 89, 1) 100%
+        );
+        @include flex-center;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: contain;
+        }
+      }
+
+      .out-team__member-info {
+        width: 50%;
+        padding: 3vw;
+
+        h3 {
+          color: white;
+          font-size: $M;
+        }
+
+        span {
+          color: $white-transparent;
+          font-size: $S;
+          font-weight: bold;
+
+          @include breakpoint(laptop-L){
+            font-size: $XS;
+          }
+        }
+
+        p {
+          color: $white-transparent;
+        }
+      }
+    }
 
     // Top Container //
     .our-team__container-top {
-        height: 55%;
-        width: 100%;
+      height: 55%;
+      width: 100%;
+      display: flex;
+
+      //Team Meamber Director Skin
+      .teamDirector {
+        background: $grey;
         display: flex;
 
-        .our-team__container-principal {
-            width: 50%;
-            width: 100%;
-            background: $grey;
-            display: flex;
-      
-            .our-team__principal-img {
-              width: 50%;
-              height: 100%;
-              background: rgb(255, 245, 225);
-              background: radial-gradient(
-                circle,
-                rgba(255, 245, 225, 1) 5%,
-                rgba(245, 194, 96, 1) 70%,
-                rgba(212, 158, 68, 1) 100%
-              );
-              @include flex-center;
-      
-              img {
-                width: 100%;
-                height: 100%;
-                object-fit: contain;
-              }
-            }
-      
-            .out-team__principal-info {
-             width: 50%;
-             padding: 3vw;
-      
-            }
+        .teamDirector-img {
+          background: rgb(255, 245, 225);
+          background: radial-gradient(
+            circle,
+            rgba(255, 245, 225, 1) 5%,
+            rgba(245, 194, 96, 1) 70%,
+            rgba(212, 158, 68, 1) 100%
+          );
+        }
+
+        .directorInfo-info {
+          width: 50%;
+          padding: 3vw;
+
+          h3 {
+            color: $green;
+            font-size: $M;
           }
+
+          span {
+            color: $gold-1;
+            font-size: $S;
+          }
+
+          p {
+            color: $black-transparent;
+          }
+        }
+      }
     }
 
     // Bottom Container //
     .our-team__container-bottom {
-        height: 45%;
-        width: 100%;
-        background: $t3;
-    }
+      height: 45%;
+      width: 100%;
+      overflow-x: hidden;
 
- 
+      .our-team__scroll {
+        width: 400%;
+        z-index: 10;
+        background: $t3;
+        height: 100%;
+
+        position: relative;
+        @include flex-center;
+        transition: all 2.5s ease-out;
+
+        .our-team__slide {
+          width: 100%;
+          height: 100%;
+          background: $t2;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
   }
 }
