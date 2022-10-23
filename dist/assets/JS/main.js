@@ -1,10 +1,10 @@
-"use strict";
+
+// Main Slider Assets //
 const buttons = document.getElementsByClassName("button");
 const first = document.getElementById("first");
 const navBottomBar = document.getElementById("bottomBar");
 const map = document.getElementById("map");
 const mapButton = document.getElementById("mapButton");
-
 
 // Main Slider & Nav Bar// 
 buttons[0].addEventListener("click", () => {
@@ -37,10 +37,29 @@ buttons[4].addEventListener("click", () => {
   window.scrollBy(0,1000);
 });
 
+// Mobile Slider Assets //
+const mobileNavButton = document.getElementsByClassName("mobileButton");
+const mobileSlide = document.getElementById("mobileSlide");
+const mobileBottomBar = document.getElementById("mobileBottomBar");
+
+
+mobileNavButton[0].addEventListener("click", () => {
+  console.log("Buenas");
+  mobileSlide.style = "margin-left: -0%;";
+  mobileBottomBar.style = "margin-left: 0%;";
+});
+
+mobileNavButton[1].addEventListener("click", () => {
+  console.log("Buenas");
+  mobileSlide.style = "margin-left: -20%;";
+  mobileBottomBar.style = "margin-left: 20%;";
+});
+
 
 // Map Expand //
 mapButton.addEventListener("click", () => {
   map.classList.toggle("map-bigger");
+  
 });
 
 

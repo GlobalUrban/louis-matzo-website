@@ -2,8 +2,8 @@
 .m-about-us {
   width: 100%;
   @include flex(column, flex-start);
-  padding:5% 10%;
-  
+  padding: 5% 10%;
+
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
@@ -14,6 +14,7 @@
   );
 
   p {
+    font-size: 18px;
     color: $white-transparent;
     text-align: justify;
   }
@@ -22,10 +23,4 @@
     @include cont-img(100%, 250px);
     max-width: 600px;
   }
-
-  
-
- 
-
- 
 }
