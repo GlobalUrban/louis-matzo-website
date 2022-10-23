@@ -243,7 +243,19 @@ p {
     max-width: 1190px;
   }
 }
+@media screen and (max-width: 1100px) {
+  .services {
+    background: #1d4529;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    padding-bottom: 5%;
+  }
+}
 .services .services__container {
+  margin-top: 2%;
   width: 100%;
   align-self: center;
   gap: 1%;
@@ -251,6 +263,11 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .services .services__container {
+    gap: 2%;
+  }
 }
 .services .services__container .services__container-service {
   display: flex;
@@ -322,6 +339,11 @@ p {
 .services .services__container .service-green {
   background: #1d4529;
 }
+@media screen and (max-width: 1100px) {
+  .services .services__container .service-green {
+    background: #1b552c;
+  }
+}
 .services .services__container .service-green ::-moz-selection { /* Code for Firefox */
   color: #1d4529;
   background: white;
@@ -342,8 +364,22 @@ p {
   align-items: flex-start;
   gap: 2%;
 }
+@media screen and (max-width: 1100px) {
+  .portfolio {
+    height: 100%;
+    background: #1d4529;
+    align-self: center;
+    align-items: center;
+  }
+}
 .portfolio .tittle-desktop {
   margin-left: 5%;
+}
+@media screen and (max-width: 1100px) {
+  .portfolio .tittle-desktop {
+    margin-left: 0;
+    font-size: 2.5rem;
+  }
 }
 .portfolio .portfloio__bottom {
   width: 100%;
@@ -351,6 +387,12 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media screen and (max-width: 1100px) {
+  .portfolio .portfloio__bottom {
+    margin-top: 5%;
+    height: 100%;
+  }
 }
 .portfolio .portfloio__bottom button {
   outline: none;
@@ -362,6 +404,13 @@ p {
   height: 50px;
   fill: rgba(0, 0, 0, 0.507);
   transition: all 0.2s;
+}
+@media screen and (max-width: 1100px) {
+  .portfolio .portfloio__bottom button svg {
+    fill: rgba(255, 255, 255, 0.507);
+    width: 40px;
+    height: 60px;
+  }
 }
 .portfolio .portfloio__bottom button svg:hover {
   transform: scale(1.3);
@@ -397,10 +446,14 @@ p {
   width: 23%;
   height: 100%;
 }
+@media screen and (max-width: 1100px) {
+  .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item {
+    width: 50%;
+  }
+}
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project {
   width: 100%;
   height: 85%;
-  background: rgba(0, 0, 0, 0.705);
   border-radius: 12px;
   overflow: hidden;
   border: none;
@@ -412,6 +465,11 @@ p {
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project:hover img {
   filter: blur(6px);
+}
+@media screen and (max-width: 1100px) {
+  .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project {
+    border-radius: 9px;
+  }
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project img {
   width: 100%;
@@ -722,6 +780,10 @@ p {
      object-fit: cover;
 }
 
+.m-services__portfolio {
+  background: #1d4529;
+}
+
 nav {
   width: 100%;
   height: 100px;
@@ -757,6 +819,35 @@ nav .nav-links button a {
 nav .nav-links button:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 1100px) {
+  nav {
+    height: 80px;
+  }
+  nav .cont-nav {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .nav-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  nav .nav-links button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.3em;
+    font-weight: 500;
+    font-family: verdana;
+  }
+  nav .nav-links button:hover {
+    cursor: pointer;
+  }
+}
 
 .barContainer {
   width: 100.5%;
@@ -768,6 +859,11 @@ nav .nav-links button:hover {
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
   transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 1100px) {
+  .barContainer {
+    width: 300.5px;
+  }
 }
 
 .slider {
@@ -781,6 +877,13 @@ nav .nav-links button:hover {
 @media screen and (max-height: 700px) {
   .slider {
     height: 87vh;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .slider {
+    background: #1d4529;
+    height: auto;
+    overflow-y: visible;
   }
 }
 .slider .slides {
@@ -1257,6 +1360,7 @@ template {
 @media screen and (max-width: 1100px) {
   .tittle-desktop {
     text-align: center;
+    color: white;
   }
   .tittle-desktop .tittle-line {
     transform: translateX(-2%);

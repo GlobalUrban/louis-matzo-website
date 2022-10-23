@@ -5,7 +5,6 @@
   color: $green;
   text-align: left;
   line-height: 0.9;
-
   // Breakpoint //
   @include breakpoint(Laptop-S) {
     text-align: center;
@@ -46,6 +45,7 @@
     //Mobile  Breakpoint //
     @include breakpoint(Laptop-S) {
         text-align: center;
+        color: white;
 
         .tittle-line {
             transform: translateX(-2%);

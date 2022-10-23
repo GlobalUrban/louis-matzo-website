@@ -37,7 +37,37 @@ nav{
             }
         }
       }
+
+      @include breakpoint(Laptop-S){
+        height: 80px;
+
+        .cont-nav {
+          width: 300px;
+          @include flex(column, center);
+        }
+
+        .nav-links {
+          width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            button {
+                background: none;
+                border: none;
+                color: white;
+                font-size: 1.3em;
+                font-weight: 500; 
+                font-family: verdana;
+                &:hover {
+                    cursor: pointer;  
+                }
+            }
+          }
+
+      }
   }
+  
   
   .barContainer {
     width: 100.5%;
@@ -56,6 +86,11 @@ nav{
           rgba(195, 149, 59, 1) 100%
         );
         transition: all 0.5s ease-in-out;
+      }
+
+      @include breakpoint(Laptop-S){
+        width: 300.5px;
+
       }
   }
   
