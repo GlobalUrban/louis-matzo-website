@@ -1,0 +1,13 @@
+@use "../../abstracts/" as *;
+.m-about-us {
+  width: 100%;
+  height: 800px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(98, 130, 108, 1) 34%,
+    rgba(51, 92, 63, 1) 56%,
+    rgba(29, 69, 41, 1) 77%
+  );
+}
