@@ -951,8 +951,25 @@ p {
 }
 .m-our-team .m-our-team__container .m-our-team__member span {
   color: rgba(255, 255, 255, 0.897);
+  font-size: 1.1rem;
 }
 .m-our-team .m-our-team__container .m-our-team__member p {
+  color: rgba(255, 255, 255, 0.897);
+  text-align: justify;
+  width: 80%;
+}
+.m-our-team .m-our-team__container .m-out-team__director .m-our-team__member-img div {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+.m-our-team .m-our-team__container .m-out-team__director h3 {
+  margin-bottom: 12px;
+  color: white;
+}
+.m-our-team .m-our-team__container .m-out-team__director span {
+  color: #f2db7e;
+}
+.m-our-team .m-our-team__container .m-out-team__director p {
   color: rgba(255, 255, 255, 0.897);
   text-align: justify;
   width: 80%;
