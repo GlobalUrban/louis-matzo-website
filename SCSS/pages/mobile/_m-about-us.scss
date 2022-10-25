@@ -1,0 +1,26 @@
+@use "../../abstracts/" as *;
+.m-about-us {
+  width: 100%;
+  @include flex(column, flex-start);
+  padding: 5% 10%;
+
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(98, 130, 108, 1) 29%,
+    rgba(51, 92, 63, 1) 45%,
+    rgba(29, 69, 41, 1) 77%
+  );
+
+  p {
+    font-size: 18px;
+    color: $white-transparent;
+    text-align: justify;
+  }
+
+  .m-about-us__img {
+    @include cont-img(100%, 250px);
+    max-width: 600px;
+  }
+}

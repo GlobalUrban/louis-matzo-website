@@ -12,11 +12,18 @@
     height: 87vh;
   }
 
+  @include breakpoint(Laptop-S){
+    background: $green;
+    height: 100%;
+    overflow-y: visible;
+  }
+
   .slides {
     width: 500%;
     height: 100%;
     display: flex;
 
+ 
     .slide {
       width: 20%;
       height: 100%;
@@ -29,6 +36,7 @@
       .slide-container {
         width: 100%;
         height: 100%;
+
       }
     }
 
