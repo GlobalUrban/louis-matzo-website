@@ -1,0 +1,179 @@
+@use '../../abstracts/' as *;
+
+
+.m-contact-us {
+    width: 100%;
+    padding-top:25px;
+    background: $green;
+    @include flex(column, flex-start);
+
+    h3 {
+        line-height: 1;
+        width: 80%;
+        max-width: 400px;
+        font-weight: 500;
+        color: $white-transparent;
+        margin-top: 20px;
+        text-align: center;   
+    }
+
+    // Form //
+    .m-contact-us__form {
+        width: 85%;
+        max-width: 400px;
+
+        button {
+            width: 90%;
+            height: 60px;
+            background: white;
+            color: $green;
+            border: none;
+            outline: none;
+            font-size: $M;
+            border-radius: 9px;
+        }
+        
+        
+        margin: 25px 0;
+        @include flex(column, center);
+
+        .m-contact-us__input {
+            @include flex-center;
+            background: rgb(154, 105, 23);
+            border-radius: 9px;
+            width: 100%;
+            height: 50px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background: linear-gradient(
+              90deg,
+              rgba(154, 105, 23, 1) 0%,
+              rgba(242, 219, 126, 1) 34%,
+              rgba(195, 149, 59, 1) 74%,
+              rgba(242, 219, 126, 1) 100%,
+              rgba(195, 149, 59, 1) 100%
+            );
+            padding: 2px;
+
+            div {
+                border-radius: 9px;
+                overflow: hidden;
+                background: $green;
+                width: 100%;
+                height: 100%;
+                input[type=text] {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: $white-transparent;
+                    font-size: $S;
+                    padding: 7px;   
+                }
+            }
+        }
+
+        .m-contact-us__textarea {
+            @include flex-center;
+            background: rgb(154, 105, 23);
+            border-radius: 9px;
+            width: 100%;
+            height: 100px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            background: linear-gradient(
+              90deg,
+              rgba(154, 105, 23, 1) 0%,
+              rgba(242, 219, 126, 1) 34%,
+              rgba(195, 149, 59, 1) 74%,
+              rgba(242, 219, 126, 1) 100%,
+              rgba(195, 149, 59, 1) 100%
+            );
+            padding: 2px;
+
+            div {
+                border-radius: 9px;
+                overflow: hidden;
+                background: $green;
+                width: 100%;
+                height: 100%;
+                textarea {
+                    width: 100%;
+                    height: 100%;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: $white-transparent;
+                    font-size: $S;
+                    padding: 7px;   
+                }
+            }
+        }
+
+
+
+      
+    }
+
+    // All links container //
+    .m-contact-us__cont-links {
+        @include flex(column, center);
+        width: 80%;
+        max-width: 400px;
+        gap: 15px;
+        color: $white-transparent;
+        font-size: $XS;
+        align-items: flex-start;
+        .contact-us__infoLink {
+            @include flex(row, center);
+            font-size: $S;
+            margin-top: 0.5em;
+            gap: 0.5em;
+    
+            @include breakpoint(laptop-L){
+              font-size: $XS;                                                                                                       ;
+            }
+            .contact-us__infoLink-icon {
+              width: 40px;
+              height: 40px;
+              @include flex-center;
+              background: rgb(154, 105, 23);
+              background: linear-gradient(
+                90deg,
+                rgba(154, 105, 23, 1) 0%,
+                rgba(242, 219, 126, 1) 34%,
+                rgba(195, 149, 59, 1) 74%,
+                rgba(242, 219, 126, 1) 100%,
+                rgba(195, 149, 59, 1) 100%
+              );
+              padding: 2px;
+            }
+    
+            .infoLink-icon__container {
+              background: white;
+              width: 100%;
+              height: 100%;
+              
+              @include flex-center;
+    
+              svg {
+                fill: $green;
+               width: 25px;
+               height: 25px;
+              }
+            }
+          }
+    }
+
+    //Map 
+    .m-contact-us__map {
+        margin-top: 50px;
+        overflow: hidden;
+        width: 100%;
+        height: 300px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    
+}

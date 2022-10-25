@@ -467,7 +467,7 @@ p {
   background: white;
 }
 .services .services__container .service-green .service-info {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
 }
 
 .portfolio {
@@ -616,7 +616,7 @@ p {
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info p {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
   text-align: justify;
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info:hover {
@@ -701,7 +701,7 @@ p {
   font-size: 1.5rem;
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info span {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
   font-size: 1.3rem;
   font-weight: bold;
 }
@@ -711,7 +711,7 @@ p {
   }
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info p {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
 }
 .our-team .our-team__container .our-team__container-top {
   height: 55%;
@@ -879,7 +879,7 @@ p {
 }
 .m-about-us p {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
   text-align: justify;
 }
 .m-about-us .m-about-us__img {
@@ -892,6 +892,160 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.m-contact-us {
+  width: 100%;
+  padding-top: 25px;
+  background: #1d4529;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.m-contact-us h3 {
+  line-height: 1;
+  width: 80%;
+  max-width: 400px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.842);
+  margin-top: 20px;
+  text-align: center;
+}
+.m-contact-us .m-contact-us__form {
+  width: 85%;
+  max-width: 400px;
+  margin: 25px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.m-contact-us .m-contact-us__form button {
+  width: 90%;
+  height: 60px;
+  background: white;
+  color: #1d4529;
+  border: none;
+  outline: none;
+  font-size: 1.5rem;
+  border-radius: 9px;
+}
+.m-contact-us .m-contact-us__form .m-contact-us__input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 105, 23);
+  border-radius: 9px;
+  width: 100%;
+  height: 50px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  padding: 2px;
+}
+.m-contact-us .m-contact-us__form .m-contact-us__input div {
+  border-radius: 9px;
+  overflow: hidden;
+  background: #1d4529;
+  width: 100%;
+  height: 100%;
+}
+.m-contact-us .m-contact-us__form .m-contact-us__input div input[type=text] {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1.3rem;
+  padding: 7px;
+}
+.m-contact-us .m-contact-us__form .m-contact-us__textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 105, 23);
+  border-radius: 9px;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  padding: 2px;
+}
+.m-contact-us .m-contact-us__form .m-contact-us__textarea div {
+  border-radius: 9px;
+  overflow: hidden;
+  background: #1d4529;
+  width: 100%;
+  height: 100%;
+}
+.m-contact-us .m-contact-us__form .m-contact-us__textarea div textarea {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  background: none;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1.3rem;
+  padding: 7px;
+}
+.m-contact-us .m-contact-us__cont-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  gap: 15px;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1.1rem;
+  align-items: flex-start;
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  margin-top: 0.5em;
+  gap: 0.5em;
+}
+@media screen and (max-width: 1400px) {
+  .m-contact-us .m-contact-us__cont-links .contact-us__infoLink {
+    font-size: 1.1rem;
+  }
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink .contact-us__infoLink-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  padding: 2px;
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink .infoLink-icon__container {
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink .infoLink-icon__container svg {
+  fill: #1d4529;
+  width: 25px;
+  height: 25px;
+}
+.m-contact-us .m-contact-us__map {
+  margin-top: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-radius: 12px 12px 0 0;
 }
 
 .m-our-team {
@@ -950,10 +1104,27 @@ p {
   color: white;
 }
 .m-our-team .m-our-team__container .m-our-team__member span {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1.1rem;
 }
 .m-our-team .m-our-team__container .m-our-team__member p {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
+  text-align: justify;
+  width: 80%;
+}
+.m-our-team .m-our-team__container .m-out-team__director .m-our-team__member-img div {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+.m-our-team .m-our-team__container .m-out-team__director h3 {
+  margin-bottom: 12px;
+  color: white;
+}
+.m-our-team .m-our-team__container .m-out-team__director span {
+  color: #f2db7e;
+}
+.m-our-team .m-our-team__container .m-out-team__director p {
+  color: rgba(255, 255, 255, 0.842);
   text-align: justify;
   width: 80%;
 }
