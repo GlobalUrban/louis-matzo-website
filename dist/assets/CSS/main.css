@@ -18,6 +18,11 @@
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
 }
 
+.gradiant-grey {
+  background: rgb(240, 240, 240);
+  background: radial-gradient(circle, rgb(240, 240, 240) 5%, rgb(161, 161, 161) 70%, rgb(89, 89, 89) 100%);
+}
+
 /**
  * Set up a decent box model on the root element
  */
@@ -227,6 +232,11 @@ p {
 .gradiant {
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+
+.gradiant-grey {
+  background: rgb(240, 240, 240);
+  background: radial-gradient(circle, rgb(240, 240, 240) 5%, rgb(161, 161, 161) 70%, rgb(89, 89, 89) 100%);
 }
 
 .services {
@@ -886,12 +896,66 @@ p {
 
 .m-our-team {
   width: 100%;
-  height: 500px;
+  padding: 20px 0px;
   background: #1d4529;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+}
+.m-our-team .m-our-team__container {
+  width: 80%;
+  min-width: 320px;
+  max-width: 450px;
+  padding-top: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.m-our-team .m-our-team__container .m-our-team__member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.m-our-team .m-our-team__container .m-our-team__member .m-our-team__member-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-bottom: 20px;
+  padding: 2px;
+  overflow: hidden;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+.m-our-team .m-our-team__container .m-our-team__member .m-our-team__member-img div {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  background: rgb(240, 240, 240);
+  overflow: hidden;
+  background: radial-gradient(circle, rgb(240, 240, 240) 5%, rgb(161, 161, 161) 70%, rgb(89, 89, 89) 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-our-team .m-our-team__container .m-our-team__member .m-our-team__member-img div img {
+  transform: scale(0.6) translateY(3%) translateX(-3%);
+}
+.m-our-team .m-our-team__container .m-our-team__member h3 {
+  margin-bottom: 12px;
+  color: white;
+}
+.m-our-team .m-our-team__container .m-our-team__member span {
+  color: rgba(255, 255, 255, 0.897);
+}
+.m-our-team .m-our-team__container .m-our-team__member p {
+  color: rgba(255, 255, 255, 0.897);
+  text-align: justify;
+  width: 80%;
 }
 
 .m-services__portfolio {
