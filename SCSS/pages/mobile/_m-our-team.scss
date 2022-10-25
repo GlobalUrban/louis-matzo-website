@@ -1,8 +1,9 @@
-@use '../../abstracts/' as *;
+   @use '../../abstracts/' as *;
 
 .m-our-team {
     width: 100%;
     height: 500px;
     background: $green;
     @include flex(column, flex-start);
+    
 }
