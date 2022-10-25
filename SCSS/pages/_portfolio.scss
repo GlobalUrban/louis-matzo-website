@@ -5,14 +5,32 @@
   align-items: flex-start;
   gap: 2%;
 
+  @include breakpoint(Laptop-S) {
+    height: 800px;
+    background: $green;
+    align-self: center;
+    align-items: center;
+  }
+
   .tittle-desktop {
     margin-left: 5%;
+
+    @include breakpoint(Laptop-S) {
+      margin-left: 0;
+      font-size: $L;
+    }
   }
 
   .portfloio__bottom {
     width: 100%;
     height: 90%;
     @include flex-center;
+
+    // Brealpoint //
+    @include breakpoint(Laptop-S) {
+      margin-top: 5%;
+      height: 100%;
+    }
 
     button {
       outline: none;
@@ -24,6 +42,13 @@
         height: 50px;
         fill: rgba(0, 0, 0, 0.507);
         transition: all 0.2s;
+
+         // Breakpoint //
+         @include breakpoint(Laptop-S){
+          fill: rgba(255, 255, 255, 0.507);
+          width: 40px;
+          height: 60px;
+        }
 
         &:hover {
           transform: scale(1.3);
@@ -58,90 +83,98 @@
             @include flex(column, center);
             width: 23%;
             height: 100%;
-    
+
+            // Breakpoint //
+            @include breakpoint(Laptop-S) {
+              width: 50%;
+            }
+
             .portfolio__item-project {
+              width: 100%;
+              height: 85%;
+              border-radius: 12px;
+              overflow: hidden;
+              border: none;
+              position: relative;
+              @include flex-center;
+              transition: all 0.4s;
+
+              &:hover img {
+                filter: blur(6px);
+              }
+
+              // Breakpoint //
+              @include breakpoint(Laptop-S) {
+                border-radius: 9px;
+              }
+
+              img {
                 width: 100%;
-                height: 85%;
-                background: $black-transparent;
-                border-radius: 12px;
-                overflow: hidden;
-                border: none;
-                position: relative;
-                @include flex-center;
+                height: 100%;
+                object-fit: cover;
+              }
+
+              .portfolio__item-cont-info {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background: rgba(0, 0, 0, 0.589);
+                opacity: 0;
                 transition: all 0.4s;
+                @include flex(column, flex-end);
 
-                &:hover img{
-                    filter: blur(6px);
+                .portfolio__item-info {
+                  @include flex(column, center);
+                  padding: 10%;
+                  color: white;
+
+                  h3 {
+                    font-size: $S;
+                  }
+
+                  p {
+                    font-size: $XS;
+                    color: $white-transparent;
+                    text-align: justify;
+                  }
                 }
 
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
+                &:hover {
+                  opacity: 1;
                 }
-
-                .portfolio__item-cont-info {
-                    width: 100%;
-                    height: 100%;
-                    position: absolute;
-                    background: rgba(0, 0, 0, 0.589);
-                    opacity: 0;
-                    transition: all 0.4s;
-                    @include flex(column, flex-end);
-
-                    .portfolio__item-info {
-                        @include flex(column, center);
-                        padding: 10%;
-                        color: white;
-                        
-                        h3 {
-                            font-size: $S;
-                        }
-
-                        p {
-                            font-size: $XS;
-                            color: $white-transparent;
-                            text-align: justify;
-                        }
-                    }
-
-                    &:hover {
-                        opacity: 1;
-
-                    }
-                }
+              }
             }
 
             .portfolio__item-see-more {
-                width: 100%;
-                height: 15%;
-                @include flex-center;
-                gap: 10px;
+              width: 100%;
+              height: 15%;
+              @include flex-center;
+              gap: 10px;
 
-                a{
-                    color: $green-2;
-                    font-weight: bold;
-                    font-size: $S;
-                    
-                    @include breakpoint(laptop-L){
-                        font-size: $XS;
-                    }
+              a {
+                color: $green-2;
+                font-weight: bold;
+                font-size: $S;
+
+                // Breakpoint //
+                @include breakpoint(laptop-L) {
+                  font-size: $XS;
                 }
-                .portfolio__see-more-line {
-                    width: 20%;
-                    height: 1.5px;
+              }
+              .portfolio__see-more-line {
+                width: 20%;
+                height: 1.5px;
 
-                    background: rgb(154, 105, 23);
-                    background: linear-gradient(
-                      90deg,
-                      rgba(154, 105, 23, 1) 0%,
-                      rgba(242, 219, 126, 1) 34%,
-                      rgba(195, 149, 59, 1) 74%,
-                      rgba(242, 219, 126, 1) 100%,
-                      rgba(195, 149, 59, 1) 100%
-                    );
-
-                }
+                background: rgb(154, 105, 23);
+                background: linear-gradient(
+                  90deg,
+                  rgba(154, 105, 23, 1) 0%,
+                  rgba(242, 219, 126, 1) 34%,
+                  rgba(195, 149, 59, 1) 74%,
+                  rgba(242, 219, 126, 1) 100%,
+                  rgba(195, 149, 59, 1) 100%
+                );
+              }
             }
           }
         }
