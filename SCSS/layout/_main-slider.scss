@@ -14,7 +14,7 @@
 
   @include breakpoint(Laptop-S){
     background: $green;
-    height: auto;
+    height: 100%;
     overflow-y: visible;
   }
 
