@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap");
 .Desktop-View {
   display: none;
 }
@@ -13,6 +17,15 @@
   }
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("../../dist/assets/Fonts/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../../dist/assets/Fonts/Gotham-Bold.otf") format("opentype");
+}
 .gradiant {
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
@@ -29,6 +42,11 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
 }
 
 /**
@@ -229,6 +247,15 @@ p {
   }
 }
 
+@font-face {
+  font-family: "Gotham";
+  src: url("../../dist/assets/Fonts/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../../dist/assets/Fonts/Gotham-Bold.otf") format("opentype");
+}
 .gradiant {
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
@@ -346,7 +373,7 @@ p {
   transition: 0.4s ease-in-out;
 }
 .services .services__container .services__container-service .service__info-larger {
-  width: 53%;
+  width: 60%;
 }
 .services .services__container .services__container-service:hover .service-info {
   margin-top: 0;
@@ -1291,7 +1318,7 @@ header .header__top {
   align-items: center;
 }
 header .header__top img {
-  width: 200px;
+  width: 250px;
 }
 header .header__top .header__rs {
   display: flex;
@@ -1680,6 +1707,7 @@ template {
   color: #1d4529;
   text-align: left;
   line-height: 0.9;
+  font-weight: 700;
 }
 @media screen and (max-width: 1100px) {
   .tittle-desktop {

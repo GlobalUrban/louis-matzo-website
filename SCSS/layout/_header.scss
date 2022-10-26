@@ -4,14 +4,9 @@ header {
   width: 100%;
   height: 90vh;
   padding: 2vh;
-  
   @include flex(column, flex);
 
-  // @media screen and(max-width: 800px) {
-  //   height: 500px;
-  // }
-
-
+// BREAKPOINTS // ==============================
   @include breakpoint-h(Tablet-S) {
     height: 87vh;
   }
@@ -24,13 +19,15 @@ header {
   @include breakpoint(Phone-L) {
     height: 55vh;
   }
+  // =============================================
 
+  // Header Top Section // 
   .header__top {
     width: 100%;
     @include flex-between(row);
 
     img {
-      width: 200px;
+      width: 250px;
     }
 
     .header__rs {
