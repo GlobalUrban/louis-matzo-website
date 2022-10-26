@@ -7,6 +7,7 @@
   max-height: 900px;
   overflow-x: hidden;
   overflow-y: hidden;
+  background: $t2;
 
   @include breakpoint-h(Tablet-S) {
     height: 87vh;
@@ -15,6 +16,7 @@
   @include breakpoint(Laptop-S){
     background: $green;
     height: 100%;
+    max-height: none;
     overflow-y: visible;
   }
 
