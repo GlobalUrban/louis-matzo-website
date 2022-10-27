@@ -6,11 +6,12 @@
   @include flex(column, center);
   position: relative;
 
+// Top Section //
   .contact-us__top {
     width: 85%;
     height: 60%;
  
-
+    // Top Left //
     .contact-us__top-left {
       width: 50%;
       height: 100%;
@@ -64,6 +65,111 @@
           }
         }
       }
+    }
+
+    .contact-us__top-right {
+      width: 400px;
+      height: 450px;
+      border-radius: 9px;
+      background: $green;
+      position: absolute;
+      right: 15vh;
+      top: 20vh;
+      z-index: 10;
+      -webkit-box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+      -moz-box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+      box-shadow: -3px 7px 12px -7px rgba(0,0,0,0.58);
+      padding: 1.5%;
+
+      button {
+        width: 90%;
+        height: 60px;
+        background: white;
+        color: $green;
+        border: none;
+        outline: none;
+        font-size: $M;
+        border-radius: 9px;
+        font-weight: 700;
+    }
+    
+    
+    margin: 25px 0;
+    @include flex(column, center);
+
+    .m-contact-us__input {
+        @include flex-center;
+        background: rgb(154, 105, 23);
+        border-radius: 9px;
+        width: 100%;
+        height: 50px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        background: linear-gradient(
+          90deg,
+          rgba(154, 105, 23, 1) 0%,
+          rgba(242, 219, 126, 1) 34%,
+          rgba(195, 149, 59, 1) 74%,
+          rgba(242, 219, 126, 1) 100%,
+          rgba(195, 149, 59, 1) 100%
+        );
+        padding: 2px;
+
+        div {
+            border-radius: 9px;
+            overflow: hidden;
+            background: $green;
+            width: 100%;
+            height: 100%;
+            input[type=text] {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                color: $white-transparent;
+                font-size: $S;
+                padding: 7px;   
+            }
+        }
+    }
+
+    .m-contact-us__textarea {
+        @include flex-center;
+        background: rgb(154, 105, 23);
+        border-radius: 9px;
+        width: 100%;
+        height: 100px;
+        overflow: hidden;
+        margin-bottom: 20px;
+        background: linear-gradient(
+          90deg,
+          rgba(154, 105, 23, 1) 0%,
+          rgba(242, 219, 126, 1) 34%,
+          rgba(195, 149, 59, 1) 74%,
+          rgba(242, 219, 126, 1) 100%,
+          rgba(195, 149, 59, 1) 100%
+        );
+        padding: 2px;
+
+        div {
+            border-radius: 9px;
+            overflow: hidden;
+            background: $green;
+            width: 100%;
+            height: 100%;
+            textarea {
+                width: 100%;
+                height: 100%;
+                border: none;
+                outline: none;
+                background: none;
+                color: $white-transparent;
+                font-size: $S;
+                padding: 7px;   
+            }
+        }
+    }
     }
   }
 
