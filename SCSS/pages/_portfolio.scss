@@ -172,6 +172,7 @@
                 // Breakpoint //
                 @include breakpoint(laptop-L) {
                   font-size: $XS;
+                  color: white;
                 }
               }
               .portfolio__see-more-line {
