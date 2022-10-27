@@ -112,7 +112,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin: 0;
   padding: 0;
   line-height: 0;
@@ -120,16 +120,16 @@ h3 {
 
 h4 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   line-height: 1;
 }
 @media screen and (max-width: 1400px) {
   p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -362,7 +362,7 @@ p {
   color: rgba(0, 0, 0, 0.705);
   margin-top: 55%;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   transition: 0.7s ease-in-out;
 }
 .services .services__container .services__container-service .service-info h3 {
@@ -413,12 +413,12 @@ p {
     width: 95%;
     color: rgba(0, 0, 0, 0.705);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: 0.7s ease-in-out;
   }
   .services .services__container .services__container-service .service-info h3 {
     margin-bottom: 12px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .services .services__container .services__container-service .service-info span {
     visibility: hidden;
@@ -457,7 +457,7 @@ p {
     color: rgba(0, 0, 0, 0.705);
     margin-top: 10%;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     transition: 0.7s ease-in-out;
   }
   .services .services__container .services__container-service .service-info h3 {
@@ -650,7 +650,7 @@ p {
   color: white;
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info p {
   font-size: 1.1rem;
@@ -671,7 +671,7 @@ p {
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-see-more a {
   color: #1b552c;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 1400px) {
   .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-see-more a {
@@ -736,11 +736,11 @@ p {
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info h3 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info span {
   color: rgba(255, 255, 255, 0.842);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: bold;
 }
 @media screen and (max-width: 1400px) {
@@ -770,11 +770,11 @@ p {
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info h3 {
   color: #1d4529;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info span {
   color: #c3953b;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info p {
   color: rgba(0, 0, 0, 0.705);
@@ -836,7 +836,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 0.5em;
   gap: 0.5em;
 }
@@ -966,7 +966,7 @@ p {
   color: #1d4529;
   border: none;
   outline: none;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   border-radius: 9px;
 }
 .m-contact-us .m-contact-us__form .m-contact-us__input {
@@ -996,7 +996,7 @@ p {
   outline: none;
   background: none;
   color: rgba(255, 255, 255, 0.842);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 7px;
 }
 .m-contact-us .m-contact-us__form .m-contact-us__textarea {
@@ -1026,7 +1026,7 @@ p {
   outline: none;
   background: none;
   color: rgba(255, 255, 255, 0.842);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   padding: 7px;
 }
 .m-contact-us .m-contact-us__cont-links {
@@ -1046,7 +1046,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   margin-top: 0.5em;
   gap: 0.5em;
 }
@@ -1234,7 +1234,7 @@ p {
   color: white;
 }
 .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info p {
   font-size: 1.1rem;
@@ -1252,7 +1252,7 @@ p {
 .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more a {
   color: rgba(255, 255, 255, 0.842);
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 @media screen and (max-width: 1400px) {
   .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more a {
@@ -1841,7 +1841,7 @@ template {
     font-size: 3rem;
   }
   .tittle-desktop span {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 }
 .tittle-desktop .tittle-line {
