@@ -6,14 +6,16 @@
   gap: 2%;
 
   @include breakpoint(Laptop-S) {
-    height: 800px;
     background: $green;
     align-self: center;
     align-items: center;
   }
 
- 
+  @include breakpoint(Phone-L) {
+  }
 
+ 
+// Tittle Desktop //
   .tittle-desktop {
     margin-left: 5%;
 

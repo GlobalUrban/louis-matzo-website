@@ -41,16 +41,21 @@ buttons[4].addEventListener("click", () => {
 const mobileNavButton = document.getElementsByClassName("mobileButton");
 const mobileSlide = document.getElementById("mobileSlide");
 const mobileBottomBar = document.getElementById("mobileBottomBar");
+const mobileServicesPortfolioContainer = document.getElementById("portfolioServices");
 
 // Mobile Services Slider //
 mobileNavButton[0].addEventListener("click", () => {
   mobileSlide.style = "margin-left: -0%;";
   mobileBottomBar.style = "margin-left: 0%;";
+  mobileServicesPortfolioContainer.classList.remove("m-portfolio__shorter");
+
 });
 
 mobileNavButton[1].addEventListener("click", () => {
   mobileSlide.style = "margin-left: -20%;";
   mobileBottomBar.style = "margin-left: 58%;";
+  mobileServicesPortfolioContainer.classList.add("m-portfolio__shorter");
+
 });
 
 

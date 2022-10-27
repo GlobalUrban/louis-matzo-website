@@ -2,9 +2,9 @@
 
 .m-services__portfolio {
     background: $green;
-
-    @include breakpoint(Phone-X) {
-       
-    }
- 
 }
+
+.m-portfolio__shorter  {
+    height: 700px!important;
+}
+
