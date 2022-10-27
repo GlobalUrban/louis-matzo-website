@@ -522,6 +522,12 @@ p {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .portfolio .tittle-desktop {
+    margin-left: 0;
+    font-size: 33px;
+  }
+}
 .portfolio .portfloio__bottom {
   width: 100%;
   height: 90%;
@@ -533,6 +539,11 @@ p {
   .portfolio .portfloio__bottom {
     margin-top: 5%;
     height: 100%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .portfolio .portfloio__bottom {
+    display: none;
   }
 }
 .portfolio .portfloio__bottom button {
@@ -1156,10 +1167,113 @@ p {
   width: 80%;
 }
 
+.m-portfolio {
+  display: none;
+  width: 90%;
+  height: 100%;
+  padding: 2px;
+  overflow-x: scroll;
+  margin-top: 25px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.m-portfolio::-webkit-scrollbar {
+  display: none;
+}
+.m-portfolio .m-portfolio__scroll {
+  width: 1300px;
+  display: flex;
+  gap: 25px;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project {
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 1100px) {
+  .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project {
+    border-radius: 9px;
+  }
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.589);
+  opacity: 1;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  color: white;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info h3 {
+  font-size: 1.3rem;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.842);
+  text-align: justify;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more a {
+  color: rgba(255, 255, 255, 0.842);
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+@media screen and (max-width: 1400px) {
+  .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more a {
+    font-size: 1.1rem;
+  }
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more .portfolio__see-more-line {
+  width: 20%;
+  height: 1.5px;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+@media screen and (max-width: 890px) {
+  .m-portfolio {
+    display: block;
+  }
+}
+
 .m-services__portfolio {
   background: #1d4529;
 }
-
 nav {
   width: 100%;
   height: 100px;

@@ -2,5 +2,9 @@
 
 .m-services__portfolio {
     background: $green;
+
+    @include breakpoint(Phone-X) {
+       
+    }
  
 }

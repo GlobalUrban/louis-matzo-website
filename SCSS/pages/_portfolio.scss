@@ -12,12 +12,19 @@
     align-items: center;
   }
 
+ 
+
   .tittle-desktop {
     margin-left: 5%;
 
     @include breakpoint(Laptop-S) {
       margin-left: 0;
       font-size: $L;
+    }
+
+    @include breakpoint(Phone-L) {
+      margin-left: 0;
+      font-size: 33px;
     }
   }
 
@@ -30,6 +37,10 @@
     @include breakpoint(Laptop-S) {
       margin-top: 5%;
       height: 100%;
+    }
+
+    @include breakpoint(Tablet-M){
+      display: none;
     }
 
     button {
