@@ -165,8 +165,12 @@
   .m-contact-us__map {
     margin-top: 50px;
     overflow: hidden;
-    width: 100%;
+    width: 100vw;
     height: 300px;
     border-radius: 12px 12px 0 0;
+
+    iframe {
+      width: 100%;
+    }
   }
 }
