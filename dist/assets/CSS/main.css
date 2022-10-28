@@ -885,82 +885,12 @@ p {
   z-index: 10;
   box-shadow: -3px 7px 12px -7px rgba(0, 0, 0, 0.58);
   padding: 1.5%;
-  margin: 25px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
-.contact-us .contact-us__top .contact-us__top-right button {
-  width: 90%;
-  height: 60px;
-  background: white;
-  color: #1d4529;
-  border: none;
-  outline: none;
-  font-size: 1.4rem;
-  border-radius: 9px;
-  font-weight: 700;
-}
-.contact-us .contact-us__top .contact-us__top-right .m-contact-us__input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(154, 105, 23);
-  border-radius: 9px;
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
-  padding: 2px;
-}
-.contact-us .contact-us__top .contact-us__top-right .m-contact-us__input div {
-  border-radius: 9px;
-  overflow: hidden;
-  background: #1d4529;
-  width: 100%;
-  height: 100%;
-}
-.contact-us .contact-us__top .contact-us__top-right .m-contact-us__input div input[type=text] {
+.contact-us .contact-us__top .contact-us__top-right .iframe-form {
   width: 100%;
   height: 100%;
   border: none;
   outline: none;
-  background: none;
-  color: rgba(255, 255, 255, 0.842);
-  font-size: 20px;
-  padding: 7px;
-}
-.contact-us .contact-us__top .contact-us__top-right .m-contact-us__textarea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(154, 105, 23);
-  border-radius: 9px;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
-  padding: 2px;
-}
-.contact-us .contact-us__top .contact-us__top-right .m-contact-us__textarea div {
-  border-radius: 9px;
-  overflow: hidden;
-  background: #1d4529;
-  width: 100%;
-  height: 100%;
-}
-.contact-us .contact-us__top .contact-us__top-right .m-contact-us__textarea div textarea {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  background: none;
-  color: rgba(255, 255, 255, 0.842);
-  font-size: 20px;
-  padding: 7px;
 }
 .contact-us .contact-us__cont-map {
   width: 100%;
@@ -1035,6 +965,13 @@ p {
   justify-content: flex-start;
   align-items: center;
 }
+.m-contact-us .tittle-desktop {
+  line-height: 1;
+  font-size: 2.5rem;
+}
+.m-contact-us .tittle-desktop span {
+  font-size: 1.4rem;
+}
 .m-contact-us h3 {
   line-height: 1;
   width: 80%;
@@ -1047,82 +984,14 @@ p {
 .m-contact-us .m-contact-us__form {
   width: 85%;
   max-width: 400px;
-  margin: 25px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 450px;
+  padding: 1.5%;
 }
-.m-contact-us .m-contact-us__form button {
-  width: 90%;
-  height: 60px;
-  background: white;
-  color: #1d4529;
-  border: none;
-  outline: none;
-  font-size: 1.4rem;
-  border-radius: 9px;
-  font-weight: 700;
-}
-.m-contact-us .m-contact-us__form .m-contact-us__input {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(154, 105, 23);
-  border-radius: 9px;
-  width: 100%;
-  height: 50px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
-  padding: 2px;
-}
-.m-contact-us .m-contact-us__form .m-contact-us__input div {
-  border-radius: 9px;
-  overflow: hidden;
-  background: #1d4529;
-  width: 100%;
-  height: 100%;
-}
-.m-contact-us .m-contact-us__form .m-contact-us__input div input[type=text] {
+.m-contact-us .m-contact-us__form .iframe-form {
   width: 100%;
   height: 100%;
   border: none;
   outline: none;
-  background: none;
-  color: rgba(255, 255, 255, 0.842);
-  font-size: 20px;
-  padding: 7px;
-}
-.m-contact-us .m-contact-us__form .m-contact-us__textarea {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgb(154, 105, 23);
-  border-radius: 9px;
-  width: 100%;
-  height: 100px;
-  overflow: hidden;
-  margin-bottom: 20px;
-  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
-  padding: 2px;
-}
-.m-contact-us .m-contact-us__form .m-contact-us__textarea div {
-  border-radius: 9px;
-  overflow: hidden;
-  background: #1d4529;
-  width: 100%;
-  height: 100%;
-}
-.m-contact-us .m-contact-us__form .m-contact-us__textarea div textarea {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  background: none;
-  color: rgba(255, 255, 255, 0.842);
-  font-size: 20px;
-  padding: 7px;
 }
 .m-contact-us .m-contact-us__cont-links {
   display: flex;
@@ -1176,7 +1045,7 @@ p {
 .m-contact-us .m-contact-us__map {
   margin-top: 50px;
   overflow: hidden;
-  width: 100vw;
+  width: 100%;
   height: 300px;
   border-radius: 12px 12px 0 0;
 }
