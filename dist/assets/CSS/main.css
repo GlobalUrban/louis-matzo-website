@@ -1398,19 +1398,24 @@ header {
 }
 header .header__top {
   width: 100%;
+  padding: 1.5%;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
 }
 header .header__top img {
-  width: 250px;
+  width: 25%;
+  position: absolute;
+  left: 2%;
+  top: 2%;
 }
 header .header__top .header__rs {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  align-self: flex-start;
   gap: 1rem;
 }
 header .header__top .header__rs svg {
@@ -1424,7 +1429,7 @@ header .header__top .header__rs svg:hover {
 }
 @media screen and (max-width: 890px) {
   header .header__top img {
-    width: 150px;
+    width: 30%;
   }
   header .header__top .header__rs svg {
     width: 2rem;
@@ -1433,7 +1438,7 @@ header .header__top .header__rs svg:hover {
 }
 @media screen and (max-width: 480px) {
   header .header__top img {
-    width: 120px;
+    width: 35%;
   }
   header .header__top .header__rs svg {
     width: 1.7rem;

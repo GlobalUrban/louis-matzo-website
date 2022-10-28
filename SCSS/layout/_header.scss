@@ -24,14 +24,19 @@ header {
   // Header Top Section // 
   .header__top {
     width: 100%;
-    @include flex-between(row);
+    padding: 1.5%;
+    @include flex(row, flex-end);
 
     img {
-      width: 250px;
+      width: 25%;
+      position: absolute;
+      left: 2%;
+      top: 2%
     }
 
     .header__rs {
       @include flex-around(row);
+      align-self: flex-start;
       gap: 1rem;
 
       svg {
@@ -49,7 +54,7 @@ header {
     // Breakpoint //
     @include breakpoint(Tablet-M) {
       img {
-        width: 150px;
+        width: 30%;
       }
 
       .header__rs {
@@ -62,7 +67,7 @@ header {
     // Breakpoint //
     @include breakpoint(Phone-L) {
       img {
-        width: 120px;
+        width: 35%;
       }
 
       .header__rs {
