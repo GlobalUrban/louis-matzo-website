@@ -338,6 +338,7 @@ p {
 @media screen and (max-width: 890px) {
   .services .services__container .services__container-service {
     padding: 0 15px;
+    pointer-events: none;
   }
 }
 .services .services__container .services__container-service ::-moz-selection {
@@ -1242,9 +1243,9 @@ p {
   background: #1d4529;
 }
 .m-services__portfolio .m-services__btn {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   border: none;
   outline: none;
@@ -1269,6 +1270,22 @@ p {
 }
 .m-services__portfolio .m-service__btn-pressed .services__container-service .service-info span {
   visibility: visible;
+}
+.m-services__portfolio .m-service__btn-pressed svg {
+  transform: rotate(-90deg);
+  fill: white;
+  width: 25px;
+  height: 25px;
+  bottom: 7%;
+}
+.m-services__portfolio svg {
+  position: absolute;
+  bottom: 10%;
+  transform: rotate(90deg);
+  fill: rgba(255, 255, 255, 0.665);
+  width: 20px;
+  height: 20px;
+  transition: all 0.4s;
 }
 
 .m-portfolio__shorter {
@@ -1344,12 +1361,22 @@ nav .nav-links button:hover {
   width: 100.5%;
   display: flex;
 }
+@media screen and (max-width: 550px) {
+  .barContainer {
+    transform: translateX(12%);
+  }
+}
 .barContainer .bottomBar {
   width: 120px;
   height: 2px;
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
   transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 550px) {
+  .barContainer .bottomBar {
+    width: 80px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .barContainer {

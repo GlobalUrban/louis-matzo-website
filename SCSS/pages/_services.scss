@@ -59,6 +59,8 @@
 
       @include breakpoint(Tablet-M) {
         padding: 0 15px;
+
+       pointer-events: none;
       }
 
       ::-moz-selection {

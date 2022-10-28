@@ -73,9 +73,21 @@ nav{
     width: 100.5%;
     display: flex;
     
+
+    @include breakpoint(Phone-X) {
+      transform: translateX(12%);
+    }
+    
     .bottomBar {
         width: 120px;
         height: 2px;
+
+        // Bar hot fix 
+        @include breakpoint(Phone-X) {
+          width: 80px;
+        }
+
+
         background: rgb(154, 105, 23);
         background: linear-gradient(
           90deg,
@@ -90,7 +102,6 @@ nav{
 
       @include breakpoint(Laptop-S){
         width: 300.5px;
-
       }
   }
   
