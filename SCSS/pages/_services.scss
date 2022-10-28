@@ -13,7 +13,7 @@
 
   @include breakpoint(Laptop-S) {
     background: $green;
-    height: 2000px;
+    // height: 2000px;
     @include flex(column, center);
     align-items: center;
     padding-bottom: 5%;

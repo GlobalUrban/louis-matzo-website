@@ -2,7 +2,6 @@
 
 .m-services__portfolio {
   background: $green;
- 
 
   .m-services__btn {
     position: relative;
@@ -40,23 +39,43 @@
     }
 
     svg {
-        transform: rotate(-90deg);
-        fill: white;
-        width: 25px;
-        height: 25px;
-        bottom: 7%;
-      
-      }
+      transform: rotate(-90deg);
+      fill: white;
+      width: 25px;
+      height: 25px;
+      bottom: 3%;
+
+      @include breakpoint(Phone-X){
+        bottom: 5%;
+    }
+
+    }
+
+    .svg-green {
+        fill: rgba(0, 0, 0, 0.486);
+    }
   }
 
   svg {
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     transform: rotate(90deg);
     fill: rgba(255, 255, 255, 0.665);
     width: 20px;
     height: 20px;
     transition: all 0.4s;
+
+    @include breakpoint(Phone-X){
+        bottom: 15%;
+    }
+
+   @media screen and(min-width: 890px) {
+    display: none;
+   }
+  }
+
+  .svg-green {
+    fill: rgba(0, 0, 0, 0.233);
   }
 }
 

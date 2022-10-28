@@ -284,7 +284,6 @@ p {
 @media screen and (max-width: 1100px) {
   .services {
     background: #1d4529;
-    height: 2000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1276,16 +1275,37 @@ p {
   fill: white;
   width: 25px;
   height: 25px;
-  bottom: 7%;
+  bottom: 3%;
+}
+@media screen and (max-width: 550px) {
+  .m-services__portfolio .m-service__btn-pressed svg {
+    bottom: 5%;
+  }
+}
+.m-services__portfolio .m-service__btn-pressed .svg-green {
+  fill: rgba(0, 0, 0, 0.486);
 }
 .m-services__portfolio svg {
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   transform: rotate(90deg);
   fill: rgba(255, 255, 255, 0.665);
   width: 20px;
   height: 20px;
   transition: all 0.4s;
+}
+@media screen and (max-width: 550px) {
+  .m-services__portfolio svg {
+    bottom: 15%;
+  }
+}
+@media screen and (min-width: 890px) {
+  .m-services__portfolio svg {
+    display: none;
+  }
+}
+.m-services__portfolio .svg-green {
+  fill: rgba(0, 0, 0, 0.233);
 }
 
 .m-portfolio__shorter {
