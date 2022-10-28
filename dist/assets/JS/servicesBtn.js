@@ -1,6 +1,7 @@
-const serviceBtn = document.getElementsByClassName("services__container-service");
+const serviceBtn = document.getElementById("m-services__btn");
+// const serviceBtn = document.querySelectorAll("m-services__btn");
 
-
-serviceBtn.addEventListener("click", () =>{
-console.log("se puyo el boton equisde");
-});
+serviceBtn.addEventListener("click", () => {
+   console.log("se puyo el service")
+   serviceBtn.classList.toggle("m-service__btn-pressed");
+  });
