@@ -318,6 +318,7 @@ p {
     min-width: 300px;
     position: relative;
     margin-top: 15px;
+    gap: 0.5%;
   }
 }
 .services .services__container .services__container-service {
@@ -1249,8 +1250,8 @@ p {
   border: none;
   outline: none;
   background: none;
-  padding: none;
-  margin: none;
+  padding: 0;
+  margin: 0;
 }
 .m-services__portfolio .m-service__btn-pressed .services__container-service {
   transform: scale(1.03);
