@@ -13,7 +13,6 @@
     padding-top: 5%;
     @include flex(column, center);
     margin-top: 20px;
-    
 
     .m-our-team__member {
       @include flex(column, center);
@@ -78,15 +77,15 @@
     .m-out-team__director {
       .m-our-team__member-img {
         div {
-            background: rgb(154, 105, 23);
-            background: linear-gradient(
-              90deg,
-              rgba(154, 105, 23, 1) 0%,
-              rgba(242, 219, 126, 1) 34%,
-              rgba(195, 149, 59, 1) 74%,
-              rgba(242, 219, 126, 1) 100%,
-              rgba(195, 149, 59, 1) 100%
-            );
+          background: rgb(154, 105, 23);
+          background: linear-gradient(
+            90deg,
+            rgba(154, 105, 23, 1) 0%,
+            rgba(242, 219, 126, 1) 34%,
+            rgba(195, 149, 59, 1) 74%,
+            rgba(242, 219, 126, 1) 100%,
+            rgba(195, 149, 59, 1) 100%
+          );
         }
       }
 
@@ -103,7 +102,29 @@
         color: $white-transparent;
         text-align: justify;
         width: 80%;
-      } 
+      }
+    }
+
+    .container {
+      width: 100%;
+      overflow-x: hidden;
+
+      .slider {
+        width: 400%;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        gap: 5px;
+        display: flex;
+        transition: all 1.5s ease-out;
+
+        .slide {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
     }
   }
 }
