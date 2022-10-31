@@ -6,18 +6,27 @@
   gap: 2%;
 
   @include breakpoint(Laptop-S) {
-    height: 800px;
     background: $green;
     align-self: center;
     align-items: center;
   }
 
+  @include breakpoint(Phone-L) {
+  }
+
+ 
+// Tittle Desktop //
   .tittle-desktop {
     margin-left: 5%;
 
     @include breakpoint(Laptop-S) {
       margin-left: 0;
       font-size: $L;
+    }
+
+    @include breakpoint(Phone-L) {
+      margin-left: 0;
+      font-size: 33px;
     }
   }
 
@@ -30,6 +39,10 @@
     @include breakpoint(Laptop-S) {
       margin-top: 5%;
       height: 100%;
+    }
+
+    @include breakpoint(Tablet-M){
+      display: none;
     }
 
     button {
@@ -159,6 +172,7 @@
                 // Breakpoint //
                 @include breakpoint(laptop-L) {
                   font-size: $XS;
+                  color: white;
                 }
               }
               .portfolio__see-more-line {

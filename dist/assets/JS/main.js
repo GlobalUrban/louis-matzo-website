@@ -2,8 +2,6 @@
 const buttons = document.getElementsByClassName("button");
 const first = document.getElementById("first");
 const navBottomBar = document.getElementById("bottomBar");
-const map = document.getElementById("map");
-const mapButton = document.getElementById("mapButton");
 
 // Main Slider & Nav Bar Animation//
 buttons[0].addEventListener("click", () => {
@@ -41,20 +39,38 @@ buttons[4].addEventListener("click", () => {
 const mobileNavButton = document.getElementsByClassName("mobileButton");
 const mobileSlide = document.getElementById("mobileSlide");
 const mobileBottomBar = document.getElementById("mobileBottomBar");
+const mobileServicesPortfolioContainer = document.getElementById("portfolioServices");
 
 // Mobile Services Slider //
 mobileNavButton[0].addEventListener("click", () => {
   mobileSlide.style = "margin-left: -0%;";
   mobileBottomBar.style = "margin-left: 0%;";
+  mobileServicesPortfolioContainer.classList.remove("m-portfolio__shorter");
+
 });
 
 mobileNavButton[1].addEventListener("click", () => {
   mobileSlide.style = "margin-left: -20%;";
   mobileBottomBar.style = "margin-left: 58%;";
+  mobileServicesPortfolioContainer.classList.add("m-portfolio__shorter");
+
 });
 
 
 // Map Expand //
+const mapButton = document.getElementById("mapButton");
+const map = document.getElementById("map");
+let expanded = false;
+
 mapButton.addEventListener("click", () => {
   map.classList.toggle("map-bigger");
+
+  if(expanded == false) {
+    mapButton.innerHTML = "Contract";
+    expanded = true;
+  }else {
+    mapButton.innerHTML = "Expand"
+    expanded = false
+  }
+  
 });

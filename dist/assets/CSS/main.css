@@ -1,18 +1,31 @@
-@media screen and (max-width: 1100px) {
-  .Desktop-View {
-    display: none;
-  }
-}
-
-.Mobile-View {
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;700&display=swap");
+.Desktop-View {
   display: none;
 }
-@media screen and (max-width: 1100px) {
-  .Mobile-View {
+@media screen and (min-width: 1100px) {
+  .Desktop-View {
     display: block;
   }
 }
 
+@media screen and (min-width: 1100px) {
+  .Mobile-View {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../dist/assets/Fonts/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../../dist/assets/Fonts/Gotham-Bold.otf") format("opentype");
+}
 .gradiant {
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
@@ -29,6 +42,11 @@
 html {
   box-sizing: border-box;
   scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
 }
 
 /**
@@ -94,7 +112,7 @@ h1 {
 }
 
 h3 {
-  font-size: 1.3rem;
+  font-size: 20px;
   margin: 0;
   padding: 0;
   line-height: 0;
@@ -102,16 +120,16 @@ h3 {
 
 h4 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 
 p {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   line-height: 1;
 }
 @media screen and (max-width: 1400px) {
   p {
-    font-size: 1.3rem;
+    font-size: 20px;
   }
 }
 
@@ -214,21 +232,30 @@ p {
   text-align: justify;
 }
 
-@media screen and (max-width: 1100px) {
-  .Desktop-View {
-    display: none;
-  }
-}
-
-.Mobile-View {
+.Desktop-View {
   display: none;
 }
-@media screen and (max-width: 1100px) {
-  .Mobile-View {
+@media screen and (min-width: 1100px) {
+  .Desktop-View {
     display: block;
   }
 }
 
+@media screen and (min-width: 1100px) {
+  .Mobile-View {
+    display: none;
+  }
+}
+
+@font-face {
+  font-family: "Gotham";
+  src: url("../../dist/assets/Fonts/Gotham-Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Gotham";
+  font-weight: bold;
+  src: url("../../dist/assets/Fonts/Gotham-Bold.otf") format("opentype");
+}
 .gradiant {
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
@@ -247,6 +274,7 @@ p {
   align-items: flex-start;
   max-width: 1300px;
   gap: 5%;
+  overflow: hidden;
 }
 @media screen and (max-width: 1400px) {
   .services {
@@ -256,7 +284,6 @@ p {
 @media screen and (max-width: 1100px) {
   .services {
     background: #1d4529;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -291,6 +318,7 @@ p {
     min-width: 300px;
     position: relative;
     margin-top: 15px;
+    gap: 0.5%;
   }
 }
 .services .services__container .services__container-service {
@@ -306,6 +334,12 @@ p {
   overflow-y: hidden;
   background: rgb(240, 240, 240);
   transition: 0.4s ease-in-out;
+}
+@media screen and (max-width: 890px) {
+  .services .services__container .services__container-service {
+    padding: 0 15px;
+    pointer-events: none;
+  }
 }
 .services .services__container .services__container-service ::-moz-selection {
   /* Code for Firefox */
@@ -335,7 +369,7 @@ p {
   color: rgba(0, 0, 0, 0.705);
   margin-top: 55%;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 20px;
   transition: 0.7s ease-in-out;
 }
 .services .services__container .services__container-service .service-info h3 {
@@ -346,7 +380,7 @@ p {
   transition: 0.4s ease-in-out;
 }
 .services .services__container .services__container-service .service__info-larger {
-  width: 53%;
+  width: 60%;
 }
 .services .services__container .services__container-service:hover .service-info {
   margin-top: 0;
@@ -386,12 +420,12 @@ p {
     width: 95%;
     color: rgba(0, 0, 0, 0.705);
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 20px;
     transition: 0.7s ease-in-out;
   }
   .services .services__container .services__container-service .service-info h3 {
     margin-bottom: 12px;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .services .services__container .services__container-service .service-info span {
     visibility: hidden;
@@ -430,7 +464,7 @@ p {
     color: rgba(0, 0, 0, 0.705);
     margin-top: 10%;
     font-weight: 500;
-    font-size: 1.3rem;
+    font-size: 20px;
     transition: 0.7s ease-in-out;
   }
   .services .services__container .services__container-service .service-info h3 {
@@ -467,7 +501,7 @@ p {
   background: white;
 }
 .services .services__container .service-green .service-info {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
 }
 
 .portfolio {
@@ -480,7 +514,6 @@ p {
 }
 @media screen and (max-width: 1100px) {
   .portfolio {
-    height: 800px;
     background: #1d4529;
     align-self: center;
     align-items: center;
@@ -495,6 +528,12 @@ p {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 480px) {
+  .portfolio .tittle-desktop {
+    margin-left: 0;
+    font-size: 33px;
+  }
+}
 .portfolio .portfloio__bottom {
   width: 100%;
   height: 90%;
@@ -506,6 +545,11 @@ p {
   .portfolio .portfloio__bottom {
     margin-top: 5%;
     height: 100%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .portfolio .portfloio__bottom {
+    display: none;
   }
 }
 .portfolio .portfloio__bottom button {
@@ -612,11 +656,11 @@ p {
   color: white;
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info h3 {
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info p {
   font-size: 1.1rem;
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
   text-align: justify;
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-project .portfolio__item-cont-info:hover {
@@ -633,11 +677,12 @@ p {
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-see-more a {
   color: #1b552c;
   font-weight: bold;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 @media screen and (max-width: 1400px) {
   .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-see-more a {
     font-size: 1.1rem;
+    color: white;
   }
 }
 .portfolio .portfloio__bottom .portfolio__slider-container .portfolio__slider .portfolio__slider-slide .portfolio__slide-item .portfolio__item-see-more .portfolio__see-more-line {
@@ -698,11 +743,11 @@ p {
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info h3 {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info span {
-  color: rgba(255, 255, 255, 0.897);
-  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 20px;
   font-weight: bold;
 }
 @media screen and (max-width: 1400px) {
@@ -711,7 +756,7 @@ p {
   }
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info p {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
 }
 .our-team .our-team__container .our-team__container-top {
   height: 55%;
@@ -732,11 +777,11 @@ p {
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info h3 {
   color: #1d4529;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info span {
   color: #c3953b;
-  font-size: 1.3rem;
+  font-size: 20px;
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info p {
   color: rgba(0, 0, 0, 0.705);
@@ -798,7 +843,7 @@ p {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  font-size: 1.3rem;
+  font-size: 20px;
   margin-top: 0.5em;
   gap: 0.5em;
 }
@@ -829,6 +874,24 @@ p {
   fill: #1d4529;
   width: 1.2em;
   height: 1.2em;
+}
+.contact-us .contact-us__top .contact-us__top-right {
+  width: 400px;
+  height: 450px;
+  border-radius: 9px;
+  background: #1d4529;
+  position: absolute;
+  right: 15vh;
+  top: 20vh;
+  z-index: 10;
+  box-shadow: -3px 7px 12px -7px rgba(0, 0, 0, 0.58);
+  padding: 1.5%;
+}
+.contact-us .contact-us__top .contact-us__top-right .iframe-form {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
 }
 .contact-us .contact-us__cont-map {
   width: 100%;
@@ -879,7 +942,7 @@ p {
 }
 .m-about-us p {
   font-size: 18px;
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
   text-align: justify;
 }
 .m-about-us .m-about-us__img {
@@ -892,6 +955,103 @@ p {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.m-contact-us {
+  width: 100%;
+  padding-top: 25px;
+  background: #1d4529;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.m-contact-us .tittle-desktop {
+  line-height: 1;
+  font-size: 2.5rem;
+}
+.m-contact-us .tittle-desktop span {
+  font-size: 1.4rem;
+}
+.m-contact-us h3 {
+  line-height: 1;
+  width: 80%;
+  max-width: 400px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.842);
+  margin-top: 20px;
+  text-align: center;
+}
+.m-contact-us .m-contact-us__form {
+  width: 85%;
+  max-width: 400px;
+  height: 450px;
+  padding: 1.5%;
+}
+.m-contact-us .m-contact-us__form .iframe-form {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+.m-contact-us .m-contact-us__cont-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 400px;
+  gap: 15px;
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1.1rem;
+  align-items: flex-start;
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-top: 0.5em;
+  gap: 0.5em;
+}
+@media screen and (max-width: 1400px) {
+  .m-contact-us .m-contact-us__cont-links .contact-us__infoLink {
+    font-size: 1.1rem;
+  }
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink .contact-us__infoLink-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  padding: 2px;
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink .infoLink-icon__container {
+  background: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.m-contact-us .m-contact-us__cont-links .contact-us__infoLink .infoLink-icon__container svg {
+  fill: #1d4529;
+  width: 25px;
+  height: 25px;
+}
+.m-contact-us .m-contact-us__map {
+  margin-top: 50px;
+  overflow: hidden;
+  width: 100%;
+  height: 300px;
+  border-radius: 12px 12px 0 0;
+}
+.m-contact-us .m-contact-us__map iframe {
+  width: 100%;
 }
 
 .m-our-team {
@@ -950,16 +1110,207 @@ p {
   color: white;
 }
 .m-our-team .m-our-team__container .m-our-team__member span {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
+  font-size: 1.1rem;
 }
 .m-our-team .m-our-team__container .m-our-team__member p {
-  color: rgba(255, 255, 255, 0.897);
+  color: rgba(255, 255, 255, 0.842);
+  text-align: justify;
+  width: 80%;
+}
+.m-our-team .m-our-team__container .m-out-team__director .m-our-team__member-img div {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+.m-our-team .m-our-team__container .m-out-team__director h3 {
+  margin-bottom: 12px;
+  color: white;
+}
+.m-our-team .m-our-team__container .m-out-team__director span {
+  color: #f2db7e;
+}
+.m-our-team .m-our-team__container .m-out-team__director p {
+  color: rgba(255, 255, 255, 0.842);
   text-align: justify;
   width: 80%;
 }
 
+.m-portfolio {
+  display: none;
+  width: 90%;
+  height: 100%;
+  padding: 2px;
+  overflow-x: scroll;
+  margin-top: 25px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.m-portfolio::-webkit-scrollbar {
+  display: none;
+}
+.m-portfolio .m-portfolio__scroll {
+  width: 1300px;
+  display: flex;
+  gap: 25px;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item {
+  width: 300px;
+  height: 500px;
+  overflow: hidden;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project {
+  width: 100%;
+  height: 90%;
+  border-radius: 12px;
+  overflow: hidden;
+  border: none;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 1100px) {
+  .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project {
+    border-radius: 9px;
+  }
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.589);
+  opacity: 1;
+  transition: all 0.4s;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10%;
+  color: white;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info h3 {
+  font-size: 20px;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-project .portfolio__item-cont-info .portfolio__item-info p {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.842);
+  text-align: justify;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more a {
+  color: rgba(255, 255, 255, 0.842);
+  font-weight: bold;
+  font-size: 20px;
+}
+@media screen and (max-width: 1400px) {
+  .m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more a {
+    font-size: 1.1rem;
+  }
+}
+.m-portfolio .m-portfolio__scroll .m-portfolio__scroll-item .portfolio__item-see-more .portfolio__see-more-line {
+  width: 20%;
+  height: 1.5px;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+}
+@media screen and (max-width: 890px) {
+  .m-portfolio {
+    display: block;
+  }
+}
+
 .m-services__portfolio {
   background: #1d4529;
+}
+.m-services__portfolio .m-services__btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.m-services__portfolio .m-service__btn-pressed .services__container-service {
+  transform: scale(1.03);
+  box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+  height: 250px;
+  width: 370px;
+}
+.m-services__portfolio .m-service__btn-pressed .services__container-service .service-img {
+  transform: rotate(360deg) scale(4);
+  visibility: visible;
+  opacity: 0.2;
+}
+.m-services__portfolio .m-service__btn-pressed .services__container-service .service-info {
+  margin-top: 0;
+  width: 80%;
+}
+.m-services__portfolio .m-service__btn-pressed .services__container-service .service-info span {
+  visibility: visible;
+}
+.m-services__portfolio .m-service__btn-pressed svg {
+  transform: rotate(-90deg);
+  fill: white;
+  width: 25px;
+  height: 25px;
+  bottom: 3%;
+}
+@media screen and (max-width: 550px) {
+  .m-services__portfolio .m-service__btn-pressed svg {
+    bottom: 5%;
+  }
+}
+.m-services__portfolio .m-service__btn-pressed .svg-green {
+  fill: rgba(0, 0, 0, 0.486);
+}
+.m-services__portfolio svg {
+  position: absolute;
+  bottom: 5%;
+  transform: rotate(90deg);
+  fill: rgba(255, 255, 255, 0.665);
+  width: 20px;
+  height: 20px;
+  transition: all 0.4s;
+}
+@media screen and (max-width: 550px) {
+  .m-services__portfolio svg {
+    bottom: 15%;
+  }
+}
+@media screen and (min-width: 890px) {
+  .m-services__portfolio svg {
+    display: none;
+  }
+}
+.m-services__portfolio .svg-green {
+  fill: rgba(0, 0, 0, 0.233);
+}
+
+.m-portfolio__shorter {
+  height: 700px !important;
 }
 
 nav {
@@ -990,12 +1341,32 @@ nav .nav-links button {
   font-size: 1.3em;
   font-weight: 500;
   font-family: verdana;
-}
-nav .nav-links button a {
-  color: #1d4529;
+  transition: 0.1s ease-in-out;
 }
 nav .nav-links button:hover {
   cursor: pointer;
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  transform: scale(1.02) translateY(-10%);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+nav .nav-links button:focus {
+  background: rgb(154, 105, 23);
+  background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
+  transform: scale(1.05);
+  /* Set the background size and repeat properties. */
+  background-size: 100%;
+  background-repeat: repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
 @media screen and (max-width: 1100px) {
   nav {
@@ -1031,12 +1402,22 @@ nav .nav-links button:hover {
   width: 100.5%;
   display: flex;
 }
+@media screen and (max-width: 550px) {
+  .barContainer {
+    transform: translateX(12%);
+  }
+}
 .barContainer .bottomBar {
   width: 120px;
   height: 2px;
   background: rgb(154, 105, 23);
   background: linear-gradient(90deg, rgb(154, 105, 23) 0%, rgb(242, 219, 126) 34%, rgb(195, 149, 59) 74%, rgb(242, 219, 126) 100%, rgb(195, 149, 59) 100%);
   transition: all 0.5s ease-in-out;
+}
+@media screen and (max-width: 550px) {
+  .barContainer .bottomBar {
+    width: 80px;
+  }
 }
 @media screen and (max-width: 1100px) {
   .barContainer {
@@ -1051,6 +1432,7 @@ nav .nav-links button:hover {
   max-height: 900px;
   overflow-x: hidden;
   overflow-y: hidden;
+  background: rgba(255, 0, 0, 0.534);
 }
 @media screen and (max-height: 700px) {
   .slider {
@@ -1061,6 +1443,7 @@ nav .nav-links button:hover {
   .slider {
     background: #1d4529;
     height: 100%;
+    max-height: none;
     overflow-y: visible;
   }
 }
@@ -1112,19 +1495,24 @@ header {
 }
 header .header__top {
   width: 100%;
+  padding: 1.5%;
   display: flex;
-  justify-content: space-between;
   flex-direction: row;
+  justify-content: flex-end;
   align-items: center;
 }
 header .header__top img {
-  width: 200px;
+  width: 25%;
+  position: absolute;
+  left: 2%;
+  top: 2%;
 }
 header .header__top .header__rs {
   display: flex;
   justify-content: space-around;
   flex-direction: row;
   align-items: center;
+  align-self: flex-start;
   gap: 1rem;
 }
 header .header__top .header__rs svg {
@@ -1138,7 +1526,7 @@ header .header__top .header__rs svg:hover {
 }
 @media screen and (max-width: 890px) {
   header .header__top img {
-    width: 150px;
+    width: 30%;
   }
   header .header__top .header__rs svg {
     width: 2rem;
@@ -1147,7 +1535,7 @@ header .header__top .header__rs svg:hover {
 }
 @media screen and (max-width: 480px) {
   header .header__top img {
-    width: 120px;
+    width: 35%;
   }
   header .header__top .header__rs svg {
     width: 1.7rem;
@@ -1507,6 +1895,7 @@ template {
   color: #1d4529;
   text-align: left;
   line-height: 0.9;
+  font-weight: 700;
 }
 @media screen and (max-width: 1100px) {
   .tittle-desktop {
@@ -1526,7 +1915,7 @@ template {
     font-size: 3rem;
   }
   .tittle-desktop span {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
 }
 .tittle-desktop .tittle-line {

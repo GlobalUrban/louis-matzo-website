@@ -5,6 +5,7 @@
   color: $green;
   text-align: left;
   line-height: 0.9;
+  font-weight: 700;
   // Breakpoint //
   @include breakpoint(Laptop-S) {
     text-align: center;

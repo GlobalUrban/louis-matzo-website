@@ -5,6 +5,7 @@
   align-items: flex-start;
   max-width: 1300px;
   gap: 5%;
+  overflow: hidden;
 
   @include breakpoint(laptop-L) {
     max-width: 1190px;
@@ -12,11 +13,12 @@
 
   @include breakpoint(Laptop-S) {
     background: $green;
-    height: auto;
+    // height: 2000px;
     @include flex(column, center);
     align-items: center;
     padding-bottom: 5%;
   }
+
 
   // ALL SERVICES // =====================
   .services__container {
@@ -33,15 +35,16 @@
 
     @include flex-center;
 
-    @include breakpoint(Tablet-M){
+    @include breakpoint(Tablet-M) {
       width: 650px;
     }
 
-    @include breakpoint(Phone-X){
+    @include breakpoint(Phone-X) {
       width: 80%;
       min-width: 300px;
       position: relative;
       margin-top: 15px;
+      gap: 0.5%;
     }
 
     //Single Service // ------------------
@@ -55,6 +58,12 @@
       overflow-y: hidden;
       background: $grey-2;
       transition: 0.4s ease-in-out;
+
+      @include breakpoint(Tablet-M) {
+        padding: 0 15px;
+
+       pointer-events: none;
+      }
 
       ::-moz-selection {
         /* Code for Firefox */
@@ -105,7 +114,7 @@
       }
 
       .service__info-larger {
-        width: 53%;
+        width: 60%;
       }
 
       &:hover .service-info {
@@ -188,7 +197,7 @@
           -moz-box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
           box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
           width: 100%;
-          height: 200px;  
+          height: 200px;
         }
 
         &:hover .service-img {
@@ -207,7 +216,6 @@
 
           h3 {
             margin-bottom: 12px;
-            
           }
 
           span {
@@ -225,12 +233,9 @@
             visibility: visible;
           }
         }
-
       }
       // --------------------------------------------------------
     }
-
-    
 
     .service-green {
       background: $green;
