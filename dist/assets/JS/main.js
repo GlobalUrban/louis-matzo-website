@@ -2,8 +2,6 @@
 const buttons = document.getElementsByClassName("button");
 const first = document.getElementById("first");
 const navBottomBar = document.getElementById("bottomBar");
-const map = document.getElementById("map");
-const mapButton = document.getElementById("mapButton");
 
 // Main Slider & Nav Bar Animation//
 buttons[0].addEventListener("click", () => {
@@ -60,6 +58,19 @@ mobileNavButton[1].addEventListener("click", () => {
 
 
 // Map Expand //
+const mapButton = document.getElementById("mapButton");
+const map = document.getElementById("map");
+let expanded = false;
+
 mapButton.addEventListener("click", () => {
   map.classList.toggle("map-bigger");
+
+  if(expanded == false) {
+    mapButton.innerHTML = "Contract";
+    expanded = true;
+  }else {
+    mapButton.innerHTML = "Expand"
+    expanded = false
+  }
+  
 });
