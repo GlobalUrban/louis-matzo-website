@@ -7,9 +7,17 @@
   max-height: 900px;
   overflow-x: hidden;
   overflow-y: hidden;
+  background: $t2;
 
   @include breakpoint-h(Tablet-S) {
     height: 87vh;
+  }
+
+  @include breakpoint(Laptop-S){
+    background: $green;
+    height: 100%;
+    max-height: none;
+    overflow-y: visible;
   }
 
   .slides {
@@ -17,6 +25,7 @@
     height: 100%;
     display: flex;
 
+ 
     .slide {
       width: 20%;
       height: 100%;
@@ -26,9 +35,11 @@
       background: white;
       transition: 0.5s ease-in-out;
 
+  
       .slide-container {
         width: 100%;
         height: 100%;
+
       }
     }
 

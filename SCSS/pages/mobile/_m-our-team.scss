@@ -1,0 +1,109 @@
+@use "../../abstracts/" as *;
+
+.m-our-team {
+  width: 100%;
+  padding: 20px 0px;
+  background: $green;
+  @include flex(column, flex-start);
+
+  .m-our-team__container {
+    width: 80%;
+    min-width: 320px;
+    max-width: 450px;
+    padding-top: 5%;
+    @include flex(column, center);
+    margin-top: 20px;
+    
+
+    .m-our-team__member {
+      @include flex(column, center);
+      margin-bottom: 12px;
+
+      .m-our-team__member-img {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-bottom: 20px;
+        padding: 2px;
+        overflow: hidden;
+
+        background: rgb(154, 105, 23);
+        background: linear-gradient(
+          90deg,
+          rgba(154, 105, 23, 1) 0%,
+          rgba(242, 219, 126, 1) 34%,
+          rgba(195, 149, 59, 1) 74%,
+          rgba(242, 219, 126, 1) 100%,
+          rgba(195, 149, 59, 1) 100%
+        );
+
+        div {
+          width: 100%;
+          height: 100%;
+          border-radius: 100%;
+          background: rgb(240, 240, 240);
+          overflow: hidden;
+          background: radial-gradient(
+            circle,
+            rgba(240, 240, 240, 1) 5%,
+            rgba(161, 161, 161, 1) 70%,
+            rgba(89, 89, 89, 1) 100%
+          );
+
+          @include flex-center;
+
+          img {
+            transform: scale(0.6) translateY(3%) translateX(-3%);
+          }
+        }
+      }
+
+      h3 {
+        margin-bottom: 12px;
+        color: white;
+      }
+
+      span {
+        color: $white-transparent;
+        font-size: $XS;
+      }
+
+      p {
+        color: $white-transparent;
+        text-align: justify;
+        width: 80%;
+      }
+    }
+
+    .m-out-team__director {
+      .m-our-team__member-img {
+        div {
+            background: rgb(154, 105, 23);
+            background: linear-gradient(
+              90deg,
+              rgba(154, 105, 23, 1) 0%,
+              rgba(242, 219, 126, 1) 34%,
+              rgba(195, 149, 59, 1) 74%,
+              rgba(242, 219, 126, 1) 100%,
+              rgba(195, 149, 59, 1) 100%
+            );
+        }
+      }
+
+      h3 {
+        margin-bottom: 12px;
+        color: white;
+      }
+
+      span {
+        color: $gold-3;
+      }
+
+      p {
+        color: $white-transparent;
+        text-align: justify;
+        width: 80%;
+      } 
+    }
+  }
+}

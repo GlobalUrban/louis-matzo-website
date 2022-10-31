@@ -5,21 +5,49 @@
   align-items: flex-start;
   max-width: 1300px;
   gap: 5%;
+  overflow: hidden;
 
-  @include breakpoint(laptop-L){
+  @include breakpoint(laptop-L) {
     max-width: 1190px;
   }
 
+  @include breakpoint(Laptop-S) {
+    background: $green;
+    // height: 2000px;
+    @include flex(column, center);
+    align-items: center;
+    padding-bottom: 5%;
+  }
+
+
   // ALL SERVICES // =====================
   .services__container {
+    margin-top: 2%;
     width: 100%;
+
     align-self: center;
     gap: 1%;
     flex-wrap: wrap;
 
+    @include breakpoint(Laptop-S) {
+      gap: 2%;
+    }
+
     @include flex-center;
 
-    // Service // ------------------
+    @include breakpoint(Tablet-M) {
+      width: 650px;
+    }
+
+    @include breakpoint(Phone-X) {
+      width: 80%;
+      min-width: 300px;
+      position: relative;
+      margin-top: 15px;
+      gap: 0.5%;
+    }
+
+    //Single Service // ------------------
     .services__container-service {
       @include flex-between(row);
       height: 155px;
@@ -31,11 +59,18 @@
       background: $grey-2;
       transition: 0.4s ease-in-out;
 
-      ::-moz-selection { /* Code for Firefox */
+      @include breakpoint(Tablet-M) {
+        padding: 0 15px;
+
+       pointer-events: none;
+      }
+
+      ::-moz-selection {
+        /* Code for Firefox */
         color: white;
         background: $green;
       }
-      
+
       ::selection {
         color: white;
         background: $green;
@@ -50,13 +85,6 @@
         width: 450px;
       }
 
-      @include breakpoint(laptop-L){
-        &:hover {
-            height: 250px;
-            width: 370px;
-          }
-      }
-
       .service-img {
         width: 100px;
         height: 100px;
@@ -64,7 +92,7 @@
       }
 
       &:hover .service-img {
-        transform: translateX(-50%) translateY(-5%) rotate(-15deg) scale(1.5);   
+        transform: translateX(-50%) translateY(-5%) rotate(-15deg) scale(1.5);
       }
 
       .service-info {
@@ -86,38 +114,150 @@
       }
 
       .service__info-larger {
-        width: 53%;
+        width: 60%;
       }
 
       &:hover .service-info {
         margin-top: 0;
-        width: 90%;
-        
-        
+        width: 80%;
 
         span {
-            visibility: visible;
+          visibility: visible;
         }
       }
+
+      //BREAKPOINTS // ----------------------------------------------------
+
+      // Breakpoint //
+      @include breakpoint(laptop-L) {
+        &:hover {
+          height: 250px;
+          width: 370px;
+        }
+      }
+
+      //Breakpoint || Transition to tablet
+      @include breakpoint(Tablet-M) {
+        @include flex(column, center);
+        width: 250px;
+        position: relative;
+
+        .service-img {
+          width: 50px;
+          height: 50px;
+          transition: 0.4s ease-in-out;
+          position: absolute;
+          opacity: 0;
+        }
+
+        &:hover .service-img {
+          transform: rotate(360deg) scale(4);
+          visibility: visible;
+          opacity: 0.2;
+        }
+
+        .service-info {
+          width: 95%;
+          color: $black-transparent;
+          // margin-top: 55%;
+          font-weight: 500;
+          font-size: $S;
+          transition: 0.7s ease-in-out;
+
+          h3 {
+            margin-bottom: 12px;
+            font-size: $M;
+          }
+
+          span {
+            visibility: hidden;
+            transition: 0.4s ease-in-out;
+          }
+        }
+      }
+
+      //Breakpoint || Transition to Phone
+      @include breakpoint(Phone-X) {
+        @include flex-center;
+        width: 100%;
+        position: relative;
+        padding: 10px;
+        margin-bottom: 5px;
+
+        .service-img {
+          width: 50px;
+          height: 50px;
+          transition: 0.4s ease-in-out;
+          position: absolute;
+          opacity: 0;
+        }
+
+        &:hover {
+          -webkit-box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+          -moz-box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+          width: 100%;
+          height: 200px;
+        }
+
+        &:hover .service-img {
+          transform: rotate(360deg) scale(3);
+          visibility: visible;
+          opacity: 0.2;
+        }
+
+        .service-info {
+          width: 95%;
+          color: $black-transparent;
+          margin-top: 10%;
+          font-weight: 500;
+          font-size: $S;
+          transition: 0.7s ease-in-out;
+
+          h3 {
+            margin-bottom: 12px;
+          }
+
+          span {
+            visibility: hidden;
+            transition: 0.4s ease-in-out;
+            font-size: $XS;
+          }
+        }
+
+        &:hover .service-info {
+          margin-top: 0;
+          width: 90%;
+
+          span {
+            visibility: visible;
+          }
+        }
+      }
+      // --------------------------------------------------------
     }
 
     .service-green {
-        background: $green;
+      background: $green;
 
-        ::-moz-selection { /* Code for Firefox */
-            color: $green;
-            background: white;
-          }
-          
-          ::selection {
-            color: $green;
-            background: white;
-          }
+      @include breakpoint(Laptop-S) {
+        background: $green-2;
+      }
 
-        .service-info {
-            color: $white-transparent;
-        }
+      ::-moz-selection {
+        /* Code for Firefox */
+        color: $green;
+        background: white;
+      }
 
+      ::selection {
+        color: $green;
+        background: white;
+      }
+
+      .service-info {
+        color: $white-transparent;
+      }
     }
   }
   // ======================================

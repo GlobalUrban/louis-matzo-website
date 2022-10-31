@@ -6,26 +6,37 @@ header {
   padding: 2vh;
   @include flex(column, flex);
 
-  @include breakpoint(Tablet-L) {
-    height: 40vh;
-  }
-
+// BREAKPOINTS // ==============================
   @include breakpoint-h(Tablet-S) {
     height: 87vh;
   }
 
- 
+  // Breapoint //
+  @include breakpoint(Laptop-S) {
+    height: 500px;
+  }
 
+  @include breakpoint(Phone-L) {
+    height: 55vh;
+  }
+  // =============================================
+
+  // Header Top Section // 
   .header__top {
     width: 100%;
-    @include flex-between(row);
+    padding: 1.5%;
+    @include flex(row, flex-end);
 
     img {
-      width: 200px;
+      width: 25%;
+      position: absolute;
+      left: 2%;
+      top: 2%
     }
 
     .header__rs {
       @include flex-around(row);
+      align-self: flex-start;
       gap: 1rem;
 
       svg {
@@ -39,6 +50,33 @@ header {
         }
       }
     }
+
+    // Breakpoint //
+    @include breakpoint(Tablet-M) {
+      img {
+        width: 30%;
+      }
+
+      .header__rs {
+        svg {
+          width: 2rem;
+          height: 2rem;
+        }
+      }
+    }
+    // Breakpoint //
+    @include breakpoint(Phone-L) {
+      img {
+        width: 35%;
+      }
+
+      .header__rs {
+        svg {
+          width: 1.7rem;
+          height: 1.7rem;
+        }
+      }
+    }
   }
 
   .header__center {
@@ -46,16 +84,33 @@ header {
     height: auto;
     justify-self: center;
     align-self: center;
+    @include flex-center;
+    overflow: hidden;
 
-   
+    @include breakpoint(Tablet-M) {
+      width: 100%;
+    }
 
     img {
       width: 100%;
       object-fit: contain;
 
-      @include breakpoint-h(Tablet-S){
+      // Breakpoint //
+      @include breakpoint-h(Tablet-S) {
         height: 400px;
       }
     }
+
+    // Breakpoint //
+    @include breakpoint(Phone-L) {
+      height: 300px;
+      width: 100%;
+      
+      img{
+        width: 130%;
+      }
+      
+    }
   }
 }
+

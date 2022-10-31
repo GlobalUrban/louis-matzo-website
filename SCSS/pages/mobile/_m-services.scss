@@ -1,0 +1,84 @@
+@use "../../abstracts/" as *;
+
+.m-services__portfolio {
+  background: $green;
+
+  .m-services__btn {
+    position: relative;
+    @include flex-center;
+    border: none;
+    outline: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .m-service__btn-pressed {
+    .services__container-service {
+      transform: scale(1.03);
+      -webkit-box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+      box-shadow: 0px 6px 12px -9px rgba(0, 0, 0, 0.47);
+      height: 250px;
+      width: 370px;
+
+      .service-img {
+        transform: rotate(360deg) scale(4);
+        visibility: visible;
+        opacity: 0.2;
+      }
+
+      .service-info {
+        margin-top: 0;
+        width: 80%;
+
+        span {
+          visibility: visible;
+        }
+      }
+    }
+
+    svg {
+      transform: rotate(-90deg);
+      fill: white;
+      width: 25px;
+      height: 25px;
+      bottom: 3%;
+
+      @include breakpoint(Phone-X){
+        bottom: 5%;
+    }
+
+    }
+
+    .svg-green {
+        fill: rgba(0, 0, 0, 0.486);
+    }
+  }
+
+  svg {
+    position: absolute;
+    bottom: 5%;
+    transform: rotate(90deg);
+    fill: rgba(255, 255, 255, 0.665);
+    width: 20px;
+    height: 20px;
+    transition: all 0.4s;
+
+    @include breakpoint(Phone-X){
+        bottom: 15%;
+    }
+
+   @media screen and(min-width: 890px) {
+    display: none;
+   }
+  }
+
+  .svg-green {
+    fill: rgba(0, 0, 0, 0.233);
+  }
+}
+
+.m-portfolio__shorter {
+  height: 700px !important;
+}
