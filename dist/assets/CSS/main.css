@@ -1134,6 +1134,25 @@ p {
   text-align: justify;
   width: 80%;
 }
+.m-our-team .m-our-team__container .container {
+  width: 100%;
+  overflow-x: hidden;
+}
+.m-our-team .m-our-team__container .container .slider {
+  width: 400%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 5px;
+  display: flex;
+  transition: all 1.5s ease-out;
+}
+.m-our-team .m-our-team__container .container .slider .slide {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .m-portfolio {
   display: none;
