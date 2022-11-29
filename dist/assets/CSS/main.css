@@ -731,19 +731,15 @@ p {
   width: 50%;
   height: 100%;
   overflow: hidden;
-  background: rgb(240, 240, 240);
-  background: radial-gradient(circle, rgb(240, 240, 240) 5%, rgb(161, 161, 161) 70%, rgb(89, 89, 89) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
-  align-items: flex-start;
 }
 .our-team .our-team__container .our-team__container-member .our-team__member-img img {
-  width: 130%;
-  height: 130%;
-  margin-right: 10%;
-  -o-object-fit: contain;
-     object-fit: contain;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .our-team .our-team__container .our-team__container-member .out-team__member-info {
   width: 50%;
@@ -774,10 +770,6 @@ p {
 .our-team .our-team__container .our-team__container-top .teamDirector {
   background: rgb(247, 247, 247);
   display: flex;
-}
-.our-team .our-team__container .our-team__container-top .teamDirector .teamDirector-img {
-  background: rgb(255, 245, 225);
-  background: radial-gradient(circle, rgb(255, 245, 225) 5%, rgb(245, 194, 96) 70%, rgb(212, 158, 68) 100%);
 }
 .our-team .our-team__container .our-team__container-top .teamDirector .directorInfo-info {
   width: 50%;
